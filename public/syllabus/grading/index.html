@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="This website provides the support for the class Programming tools in data science given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall (currently 2019)">
+<meta name="author" content="Samuel Orso">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>Grading :: Programming tools for data science</title>
+
+    
+    <link href="/css/nucleus.css?1567081517" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567081517" rel="stylesheet">
+    <link href="/css/hybrid.css?1567081517" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567081517" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567081517" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567081517" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567081517" rel="stylesheet">
+    <link href="/css/theme.css?1567081517" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567081517" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1567081517" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1567081517"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145262296-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </head>
+  <body class="" data-url="/syllabus/grading/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<img src="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/hec_logo_white.png" alt="hec_logo" height="80" width="155">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1567081517"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567081517"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1567081517"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/syllabus/" title="Syllabus" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/syllabus/">
+          <b>1. </b>Syllabus
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/general/" title="General information" class="dd-item ">
+        <a href="/syllabus/general/">
+        General information
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/coursedescr/" title="Course description" class="dd-item ">
+        <a href="/syllabus/coursedescr/">
+        Course description
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/grading/" title="Grading" class="dd-item active">
+        <a href="/syllabus/grading/">
+        Grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/communication/" title="Communication" class="dd-item ">
+        <a href="/syllabus/communication/">
+        Communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item ">
+        <a href="/syllabus/material/">
+        Material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/final/" title="Convinced?" class="dd-item ">
+        <a href="/syllabus/final/">
+        Convinced?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/lectures/">
+          <b>2. </b>Lectures
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/lectures/additional/" title="Supplementary material" class="dd-item ">
+        <a href="/lectures/additional/">
+        Supplementary material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tutorials/">
+          <b>2. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item ">
+        <a href="/tutorials/style/">
+        R Coding Style Guide
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/workflow/" title="Project-oriented workflow" class="dd-item ">
+        <a href="/tutorials/workflow/">
+        Project-oriented workflow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/homeworks/">
+          <b>3. </b>Homeworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/schedule/" title="Schedule" class="dd-item ">
+        <a href="/homeworks/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw0/" title="homework #0" class="dd-item ">
+        <a href="/homeworks/hw0/">
+        homework #0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw1/" title="homework #1" class="dd-item ">
+        <a href="/homeworks/hw1/">
+        homework #1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/project/" title="Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/">
+          <b>4. </b>Project
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/schedule/" title="Schedule" class="dd-item ">
+        <a href="/project/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/scope/" title="Scope" class="dd-item ">
+        <a href="/project/scope/">
+        Scope
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/proposal/" title="Proposal" class="dd-item ">
+        <a href="/project/proposal/">
+        Proposal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/output/" title="Final Project" class="dd-item ">
+        <a href="/project/output/">
+        Final Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/groups/" title="Groups" class="dd-item ">
+        <a href="/project/groups/">
+        Groups
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/example/" title="Peer grading" class="dd-item ">
+        <a href="/project/example/">
+        Peer grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/">
+          <b>5. </b>Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/SMAC-Group/ptds/"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://piazza.com/class/jkmo9ble14l7mf?cid=3#"><i class='fa fa-fw fa-users'></i> Discussion forum</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://smac-group.github.io/ds/"><i class='fa fa-fw fa-book'></i> Lectures</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comsyllabus/grading.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Programming tools in data science</a> > <a href='/syllabus/'>Syllabus</a> > Grading
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#semester-project">Semester project</a></li>
+<li><a href="#homeworks">Homeworks</a></li>
+<li><a href="#participation">Participation</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Grading
+            </h1>
+          
+
+        
+
+
+
+
+
+<p>There are 60 points in total for this class. The final grades are given as follows:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Grade</th>
+<th align="left">Points</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">6.0</td>
+<td align="left">57-60</td>
+</tr>
+
+<tr>
+<td align="left">5.5</td>
+<td align="left">52-56</td>
+</tr>
+
+<tr>
+<td align="left">5.0</td>
+<td align="left">47-51</td>
+</tr>
+
+<tr>
+<td align="left">4.5</td>
+<td align="left">42-46</td>
+</tr>
+
+<tr>
+<td align="left">4.0</td>
+<td align="left">37-41</td>
+</tr>
+
+<tr>
+<td align="left">3.5</td>
+<td align="left">32-36</td>
+</tr>
+
+<tr>
+<td align="left">3.0</td>
+<td align="left">27-31</td>
+</tr>
+
+<tr>
+<td align="left">2.5</td>
+<td align="left">22-26</td>
+</tr>
+
+<tr>
+<td align="left">2.0</td>
+<td align="left">17-21</td>
+</tr>
+
+<tr>
+<td align="left">1.5</td>
+<td align="left">12-16</td>
+</tr>
+
+<tr>
+<td align="left">1.0</td>
+<td align="left">0-11</td>
+</tr>
+</tbody>
+</table>
+
+<p>Learning outcomes will be assessed based on the performances within each of the following categories:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="left">Points</th>
+<th align="left">Bonus</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">Semester project</td>
+<td align="left">30</td>
+<td align="left">3</td>
+</tr>
+
+<tr>
+<td align="left">Homeworks</td>
+<td align="left">20</td>
+<td align="left">2</td>
+</tr>
+
+<tr>
+<td align="left">Participation</td>
+<td align="left">10</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+
+<p>Bonuses may be obtained at our discretaion for the groups or individuals that give outstanding work for each of these categories, described in more details below.</p>
+
+
+<div class="notices info" ><p>No final examination for this class. The learning outcomes are continuously assessed during the semester with the homeworks, the project and the participation.</p>
+</div>
+
+
+<h3 id="semester-project">Semester project</h3>
+
+<p>The final project provides an opportunity to combine content learned throughout the course for use in some realistic application. All projects are conducted in groups. The details of the semester project are discussed in class and students will have the opportunity to choose between several project formats (see also the <a href="https://ptds.netlify.com/project/">project page</a> for more details). The 30 points of the grade are allocated according to the following criteria:</p>
+
+<ul>
+<li>Overall quality (3 points)</li>
+<li>Interest and complexity of the subject (3 points)</li>
+<li>Presentation (6 points)</li>
+<li>Screencast (3 points)</li>
+<li>Shiny app (3 points)</li>
+<li>Provided documentation (3 points)</li>
+<li>R package (3 points)</li>
+<li>GitHub repository (3 points)</li>
+<li>Website (3 points)</li>
+</ul>
+
+<p>The semester project are peer evaluated: every group grades the others and send a brief report to the instructors. The instructors grade as well the project. The final points obtained for the project is given by taking 50% of the instructors&rsquo; grades and 50% of the average from the other groups&rsquo; grades.</p>
+
+
+<div class="notices warning" ><p>Do not underestimate the workload that the project represents. This class requires good planning and team management from the students.</p>
+</div>
+
+
+<h3 id="homeworks">Homeworks</h3>
+
+<p>There are four homework assignments during the semester which are realized in groups. Each of these homeworks combines some of the content learned throughout the course. There are five points per homework. Homeworks and their specific requirements are detailed at the <a href="https://ptds.netlify.com/homeworks/">homeworks page</a>.</p>
+
+
+<div class="notices warning" ><p>Late submission is penalized by 1 point every 24 hours after the deadline.</p>
+</div>
+
+
+<h3 id="participation">Participation</h3>
+
+<p>Participation is graded based on both <a href="https://piazza.com/unil.ch/fall2019/ptds2019/home">Piazza</a> (see the <a href="https://ptds.netlify.com/syllabus/communication/">communication page</a>) and in-class activities. There are five points for each.</p>
+
+<p>In order to earn full credit for the Piazza portion, each student should make 1 or more substantive posts per week (except during the first week) related to the content of the course. A post can be a reply to another student&rsquo;s question. Grading is based on Piazza meta-data that can only be accessed by an instructor.</p>
+
+<p>Due to the structure of this class, attendance is very important. Moreover, students will be encouraged to work in teams on in-class activities each week, so others are counting on you to be in class and contribute. Students with valid excuse should notify the instructor as soon as possible and provide a minimum of one week notice.</p>
+
+<p>Each lecture will have its own magic word that you are responsible for entering into a form link that will be provided on Piazza. In order to be eligible to receive attendance points, you must be in class, enter the magic word within 5 minutes after it is given, and stay for the entire duration of the class.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/syllabus/coursedescr/" title="Course description"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/syllabus/communication/" title="Communication" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567081517"></script>
+    <script src="/js/jquery.sticky.js?1567081517"></script>
+    <script src="/js/featherlight.min.js?1567081517"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567081517"></script>
+    <script src="/js/highlight.pack.js?1567081517"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567081517"></script>
+    <script src="/js/learn.js?1567081517"></script>
+    <script src="/js/hugo-learn.js?1567081517"></script>
+
+    <link href="/mermaid/mermaid.css?1567081517" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567081517"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

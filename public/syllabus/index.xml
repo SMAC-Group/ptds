@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Syllabus on Programming tools for data science</title>
+    <link>/syllabus/</link>
+    <description>Recent content in Syllabus on Programming tools for data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 09 Aug 2018 15:18:38 +0200</lastBuildDate>
+    
+	<atom:link href="/syllabus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>General information</title>
+      <link>/syllabus/general/</link>
+      <pubDate>Thu, 09 Aug 2018 15:46:40 +0200</pubDate>
+      
+      <guid>/syllabus/general/</guid>
+      <description> Location and Time  Location: Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Office Hours:  find me on GitHub  </description>
+    </item>
+    
+    <item>
+      <title>Course description</title>
+      <link>/syllabus/coursedescr/</link>
+      <pubDate>Thu, 09 Aug 2018 16:46:34 +0200</pubDate>
+      
+      <guid>/syllabus/coursedescr/</guid>
+      <description>This class is intended to introduce to the students a wide range of programming tools using the R language. Tentative list of topics that will be discussed in this class are listed below:
+ Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
+    </item>
+    
+    <item>
+      <title>Grading</title>
+      <link>/syllabus/grading/</link>
+      <pubDate>Thu, 09 Aug 2018 16:46:59 +0200</pubDate>
+      
+      <guid>/syllabus/grading/</guid>
+      <description>There are 60 points in total for this class. The final grades are given as follows:
+   Grade Points     6.0 57-60   5.5 52-56   5.0 47-51   4.5 42-46   4.0 37-41   3.5 32-36   3.0 27-31   2.5 22-26   2.0 17-21   1.5 12-16   1.0 0-11    Learning outcomes will be assessed based on the performances within each of the following categories:</description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>/syllabus/communication/</link>
+      <pubDate>Fri, 09 Aug 2019 16:46:51 +0200</pubDate>
+      
+      <guid>/syllabus/communication/</guid>
+      <description>Piazza Follow this link to sign-up to Pizza.
+ We will be using Piazza for class-related discussion and questions, to help you benefit from each other’s questions and the collective knowledge of your classmates and instructors. Questions can be posted to the entire class (for content-related questions). I encourage you to ask questions if you are struggling to understand a concept, and to answer your classmates’ questions when you can.</description>
+    </item>
+    
+    <item>
+      <title>Material</title>
+      <link>/syllabus/material/</link>
+      <pubDate>Wed, 15 Aug 2018 19:08:54 +0200</pubDate>
+      
+      <guid>/syllabus/material/</guid>
+      <description>Laptops Bring a laptop to the class every week if you have one. We encourage students to work collaboratively, so we would like to have at least one laptop for every 2 or 3 students. Since the homeworks and the project are the work of a team, we encourage you to team-up with students that possess a laptop. In the case you plan to buy a laptop, remember that the students from Swiss Universities have preferential prices via the Neptun Projekt or the EPFL&amp;rsquo;s Poseidon.</description>
+    </item>
+    
+    <item>
+      <title>Convinced?</title>
+      <link>/syllabus/final/</link>
+      <pubDate>Fri, 17 Aug 2018 13:39:19 +0200</pubDate>
+      
+      <guid>/syllabus/final/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
