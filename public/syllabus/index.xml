@@ -17,7 +17,7 @@
       <pubDate>Thu, 09 Aug 2018 15:46:40 +0200</pubDate>
       
       <guid>/syllabus/general/</guid>
-      <description> Location and Time  Location: Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Office Hours:  find me on GitHub  </description>
+      <description>Location and Time  Location: Anthropole (to be determined) Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Anthropole/3090 Office Hours: Appointment may be made upon request.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       
       <guid>/syllabus/coursedescr/</guid>
       <description>This class is intended to introduce to the students a wide range of programming tools using the R language. Tentative list of topics that will be discussed in this class are listed below:
- Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
+ Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod, regular expression High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
     </item>
     
     <item>

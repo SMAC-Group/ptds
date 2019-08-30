@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Before the first lecture</title>
+      <link>/lectures/before/</link>
+      <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
+      
+      <guid>/lectures/before/</guid>
+      <description>This class uses R software with RStudio IDE.</description>
+    </item>
+    
+    <item>
       <title>Supplementary material</title>
       <link>/lectures/additional/</link>
       <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>

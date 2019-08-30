@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>Supplementary material</title>
-      <link>/lectures/additional/</link>
+      <title>Before the first lecture</title>
+      <link>/lectures/before/</link>
       <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
       
-      <guid>/lectures/additional/</guid>
-      <description>We use this page to add supplementary material for the lectures.
- Get R file from Lecture #1   Get RMarkdown file from Lecture #2   &amp;hellip;and the bibliography   &amp;hellip;and the HTML output   Get RMarkdown file from Lecture #4   Get R file from Lecture #5   Get slides from October 23 tutorial   Get R file from October 23 tutorial   Get R file from Lecture #6   Get slides from November 6 tutorial   Get R file from November 6 tutorial  ## Shiny App [Tutorials](https://shiny.</description>
+      <guid>/lectures/before/</guid>
+      <description>This class uses R software with RStudio IDE.</description>
     </item>
     
     <item>
@@ -55,7 +54,17 @@
       <pubDate>Thu, 09 Aug 2018 15:46:40 +0200</pubDate>
       
       <guid>/syllabus/general/</guid>
-      <description> Location and Time  Location: Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Office Hours:  find me on GitHub  </description>
+      <description>Location and Time  Location: Anthropole (to be determined) Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Anthropole/3090 Office Hours: Appointment may be made upon request.</description>
+    </item>
+    
+    <item>
+      <title>Supplementary material</title>
+      <link>/lectures/additional/</link>
+      <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
+      
+      <guid>/lectures/additional/</guid>
+      <description>We use this page to add supplementary material for the lectures.
+ Get R file from Lecture #1   Get RMarkdown file from Lecture #2   &amp;hellip;and the bibliography   &amp;hellip;and the HTML output   Get RMarkdown file from Lecture #4   Get R file from Lecture #5   Get slides from October 23 tutorial   Get R file from October 23 tutorial   Get R file from Lecture #6   Get slides from November 6 tutorial   Get R file from November 6 tutorial  ## Shiny App [Tutorials](https://shiny.</description>
     </item>
     
     <item>
@@ -98,7 +107,7 @@ This homework is optional and is not graded.
       
       <guid>/syllabus/coursedescr/</guid>
       <description>This class is intended to introduce to the students a wide range of programming tools using the R language. Tentative list of topics that will be discussed in this class are listed below:
- Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
+ Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod, regular expression High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
     </item>
     
     <item>
@@ -107,8 +116,8 @@ This homework is optional and is not graded.
       <pubDate>Sat, 18 Aug 2018 17:35:57 +0200</pubDate>
       
       <guid>/project/proposal/</guid>
-      <description>Presentation of the proposal is held the 2018-10-23.
- To make sure that your project is suitable we organize a project proposal presentation on October 23d, 2018. It consists of a 5 minutes presentation (make sure you respect that!) where you should try to &amp;ldquo;sell&amp;rdquo; your project idea to the class. This presentation can be done in any form but you should address the following points:
+      <description>Presentation of the proposal is held the 2019-10-15.
+ To make sure that your project is suitable we organize a project proposal presentation on October 15th, 2019. It consists of a 5 minutes presentation (make sure you respect that!) where you should try to &amp;ldquo;sell&amp;rdquo; your project idea to the class. This presentation can be done in any form but you should address the following points:
  Problem / Topic: What problem or topic are you addressing?</description>
     </item>
     
@@ -118,7 +127,7 @@ This homework is optional and is not graded.
       <pubDate>Fri, 17 Aug 2018 16:40:54 +0200</pubDate>
       
       <guid>/homeworks/hw1/</guid>
-      <description>Deadline: 2018-10-15 at 4pm
+      <description>Deadline: 2019-10-07 at 4pm
 To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
 We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
  The objectives of this homework assignment are the followings:
@@ -153,7 +162,7 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
       <pubDate>Sat, 18 Aug 2018 17:41:45 +0200</pubDate>
       
       <guid>/project/output/</guid>
-      <description>Presentations of the projects are held the 2018-12-18. You have 10 minutes of presentation + 5 minutes of questions per group. Each member should present a piece of the presentation.
+      <description>Presentations of the projects are held the 2019-12-17. You have 10 minutes of presentation + 5 minutes of questions per group. Each member should present a piece of the presentation.
  The output of your project must be:
  An awesome project!
  A well documented GitHub repository (see e.g. https://github.com/SMAC-Group/ds) which should be called groupX_project where X is your group number.

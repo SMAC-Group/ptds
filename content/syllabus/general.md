@@ -30,5 +30,5 @@ weight = 5
 - **Name:** [Iegor Rudnytskyi](http://hec.unil.ch/hec/recherche/fiche?pnom=irudnytskyi&dyn_lang=en)
 - **Email:** [Iegor.Rudnytskyi@unil.ch](mailto:Iegor.Rudnytskyi@unil.ch)
 - **Office:** Anthropole/3090 
-- **Office Hours:** 
+- **Office Hours:** Appointment may be made upon request.
 - <i class='fab fa-github'></i> [find me on GitHub](https://github.com/irudnyts)

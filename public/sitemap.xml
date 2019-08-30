@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/lectures/additional/</loc>
+    <loc>/lectures/before/</loc>
     <lastmod>2018-09-19T13:10:39+02:00</lastmod>
   </url>
   
@@ -30,6 +30,11 @@
   <url>
     <loc>/syllabus/</loc>
     <lastmod>2018-08-09T15:18:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lectures/additional/</loc>
+    <lastmod>2018-09-19T13:10:39+02:00</lastmod>
   </url>
   
   <url>
