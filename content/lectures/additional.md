@@ -1,7 +1,7 @@
 +++
 title = "Supplementary material"
 date =  2018-09-19T13:10:39+02:00
-weight = 5
+weight = 10
 +++
 
 We use this page to add supplementary material for the lectures.

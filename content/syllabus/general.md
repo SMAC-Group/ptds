@@ -6,7 +6,7 @@ weight = 5
 
 ### Location and Time
 
-- **Location:** 
+- **Location:** Anthropole (to be determined) 
 - **Time:** Tuesdays 8:30AM - 12AM
 
 ### Course Websites
@@ -23,12 +23,12 @@ weight = 5
 - **Email:** [Samuel.Orso@unil.ch](mailto:Samuel.Orso@unil.ch)
 - **Office:** Anthropole/3090.1
 - **Office Hours:** Appointment may be made upon request.
-- <i class='fa fa-fw fa-github'></i> [find me on GitHub](https://github.com/samorso)
+- <i class='fab fa-github'></i> [find me on GitHub](https://github.com/samorso)
 
 #### Teaching Assistant 
 
 - **Name:** [Iegor Rudnytskyi](http://hec.unil.ch/hec/recherche/fiche?pnom=irudnytskyi&dyn_lang=en)
 - **Email:** [Iegor.Rudnytskyi@unil.ch](mailto:Iegor.Rudnytskyi@unil.ch)
-- **Office:** 
+- **Office:** Anthropole/3090 
 - **Office Hours:** 
-- <i class='fa fa-fw fa-github'></i> [find me on GitHub](https://github.com/irudnyts)
+- <i class='fab fa-github'></i> [find me on GitHub](https://github.com/irudnyts)

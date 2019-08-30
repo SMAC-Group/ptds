@@ -25,8 +25,7 @@ Learning outcomes will be assessed based on the performances within each of the 
 Type | Points | Bonus
 :-- | :-- | :--
 Semester project | 30 | 3
-Homeworks | 20 | 2
-Participation | 10 | 1
+Homeworks | 30 | 3
 
 Bonuses may be obtained at our discretaion for the groups or individuals that give outstanding work for each of these categories, described in more details below.
 
@@ -60,7 +59,7 @@ There are four homework assignments during the semester which are realized in gr
 Late submission is penalized by 1 point every 24 hours after the deadline.
 {{% /notice %}}
 
-### Participation
+<--### Participation
 Participation is graded based on both [Piazza](https://piazza.com/unil.ch/fall2019/ptds2019/home) (see the [communication page](https://ptds.netlify.com/syllabus/communication/)) and in-class activities. There are five points for each. 
 
 In order to earn full credit for the Piazza portion, each student should make 1 or more substantive posts per week (except during the first week) related to the content of the course. A post can be a reply to another student's question. Grading is based on Piazza meta-data that can only be accessed by an instructor.
@@ -68,3 +67,4 @@ In order to earn full credit for the Piazza portion, each student should make 1 
 Due to the structure of this class, attendance is very important. Moreover, students will be encouraged to work in teams on in-class activities each week, so others are counting on you to be in class and contribute. Students with valid excuse should notify the instructor as soon as possible and provide a minimum of one week notice.
 
 Each lecture will have its own magic word that you are responsible for entering into a form link that will be provided on Piazza. In order to be eligible to receive attendance points, you must be in class, enter the magic word within 5 minutes after it is given, and stay for the entire duration of the class. 
+-->

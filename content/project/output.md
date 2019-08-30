@@ -5,7 +5,7 @@ weight = 20
 +++
 
 {{% notice warning %}}
-Presentations of the projects are held the **2018-12-18**.
+Presentations of the projects are held the **2019-12-17**.
 You have 10 minutes of presentation + 5 minutes of questions per group.
 Each member should present a piece of the presentation.
 {{% /notice %}}
