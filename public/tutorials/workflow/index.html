@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="This website provides the support for the class Programming tools in data science given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall (currently 2019)">
+<meta name="author" content="Samuel Orso">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>Project-oriented workflow :: Programming tools for data science</title>
+
+    
+    <link href="/css/nucleus.css?1567081516" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567081516" rel="stylesheet">
+    <link href="/css/hybrid.css?1567081516" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567081516" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567081516" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567081516" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567081516" rel="stylesheet">
+    <link href="/css/theme.css?1567081516" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567081516" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1567081516" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1567081516"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145262296-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </head>
+  <body class="" data-url="/tutorials/workflow/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<img src="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/hec_logo_white.png" alt="hec_logo" height="80" width="155">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1567081516"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567081516"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1567081516"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/syllabus/">
+          <b>1. </b>Syllabus
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/general/" title="General information" class="dd-item ">
+        <a href="/syllabus/general/">
+        General information
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/coursedescr/" title="Course description" class="dd-item ">
+        <a href="/syllabus/coursedescr/">
+        Course description
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/grading/" title="Grading" class="dd-item ">
+        <a href="/syllabus/grading/">
+        Grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/communication/" title="Communication" class="dd-item ">
+        <a href="/syllabus/communication/">
+        Communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item ">
+        <a href="/syllabus/material/">
+        Material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/final/" title="Convinced?" class="dd-item ">
+        <a href="/syllabus/final/">
+        Convinced?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/lectures/">
+          <b>2. </b>Lectures
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/lectures/additional/" title="Supplementary material" class="dd-item ">
+        <a href="/lectures/additional/">
+        Supplementary material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/tutorials/">
+          <b>2. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item ">
+        <a href="/tutorials/style/">
+        R Coding Style Guide
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/workflow/" title="Project-oriented workflow" class="dd-item active">
+        <a href="/tutorials/workflow/">
+        Project-oriented workflow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/homeworks/">
+          <b>3. </b>Homeworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/schedule/" title="Schedule" class="dd-item ">
+        <a href="/homeworks/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw0/" title="homework #0" class="dd-item ">
+        <a href="/homeworks/hw0/">
+        homework #0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw1/" title="homework #1" class="dd-item ">
+        <a href="/homeworks/hw1/">
+        homework #1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/project/" title="Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/">
+          <b>4. </b>Project
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/schedule/" title="Schedule" class="dd-item ">
+        <a href="/project/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/scope/" title="Scope" class="dd-item ">
+        <a href="/project/scope/">
+        Scope
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/proposal/" title="Proposal" class="dd-item ">
+        <a href="/project/proposal/">
+        Proposal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/output/" title="Final Project" class="dd-item ">
+        <a href="/project/output/">
+        Final Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/groups/" title="Groups" class="dd-item ">
+        <a href="/project/groups/">
+        Groups
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/example/" title="Peer grading" class="dd-item ">
+        <a href="/project/example/">
+        Peer grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/">
+          <b>5. </b>Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/SMAC-Group/ptds/"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://piazza.com/class/jkmo9ble14l7mf?cid=3#"><i class='fa fa-fw fa-users'></i> Discussion forum</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://smac-group.github.io/ds/"><i class='fa fa-fw fa-book'></i> Lectures</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comtutorials/workflow.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Programming tools in data science</a> > <a href='/tutorials/'>Tutorials</a> > Project-oriented workflow
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#project-folder-structure">Project folder structure</a></li>
+<li><a href="#content-of-r-files">Content of R files</a></li>
+<li><a href="#inizializing-a-new-data-analysis-project">Inizializing a new data analysis project</a></li>
+<li><a href="#working-with-an-existing-data-analysis-project">Working with an existing data analysis project</a></li>
+<li><a href="#references">References</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Project-oriented workflow
+            </h1>
+          
+
+        
+
+
+
+
+
+<blockquote>
+<p>It’s like agreeing that we will all drive on the left or the right. A hallmark of civilization is following conventions that constrain your behavior a little, in the name of public safety.
+<cite> Jenny Bryan </cite></p>
+</blockquote>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>In this tutorial we will learn key aspects of making a good research project:</p>
+
+<ul>
+<li>reproducible</li>
+<li>portable</li>
+<li>self-contained</li>
+</ul>
+
+<p>In data science context, reproducibility means that the whole analysis can be recreated (or repeated) from the fresh start and raw data and get exactly the same results. It means, for instance, that if the analysis involves generating random numbers, then one has to set a seed (an initial state of a random generator) to obtain the same random split each time. Ideally, everyone should also have an access to data and software to replicate your analysis (it is not always the case, since data can be private).</p>
+
+<p>Portability means that regardless the operating system or a computer, for minimal given prerequisites, the project should work. For instance, if the project uses a particular package that works only on Windows, then it is not portable. The project is also not considered as portable, if it utilizes a particular computer settings, such as absolute paths instead of relative to your project folder (e.g., when reading the data or saving plots to files). Normally, you should be able to run the code on your collaborator&rsquo;s machine without changing any lines in scripts.</p>
+
+<p>We call a project self-contained, when you have everything you need at hand (i.e., in the folder of your project) and your porject does not affect anything it did not create. The project should not use a function, which you created in the other project five years ago &ndash; it is very likely that no one else has this function. Further, if you need, for instance, to save a processed data, then it should be saved separately, and not overwrite the raw data.</p>
+
+<p>Why this is a big deal? First off, it gives more credibility to the research, because it can be verified and validated by a third party. Further, keeping the flow of analysis reproducible, portable and self-contained makes it easier to extend.</p>
+
+<p>There are no clear boundaries between these three properties, they are very close in meaning, and often overlap. As a consequence, techniques and practice we consider further improve all of them, rather than focusing on a particular one.</p>
+
+<p><img src="/tutorials/standards.png" alt="map" width="400px"/></p>
+
+<p>Even if it might look like a yet another git / RStudio tutorial, this is a list of my recommendations based on my own experience and various posts.</p>
+
+<h3 id="project-folder-structure">Project folder structure</h3>
+
+<p>The size of the project increases exponentially. A project started as a harmless code snippet can easily pile up into a huge snowball of over hundred files with unstructured folder tree. To avoid this, it is important do define the folder structure before stepping into analyses. Depending whether the project is a package or a case study, its skeleton differs significantly.</p>
+
+<p>The folder structure of R packages is a subject to a regulation of community (CRAN and Bioconductor). It is well-defined and can be explored in <a href="http://r-pkgs.had.co.nz/package.html">R packages book</a>, therefore, I skip it in this tutorial.</p>
+
+<p>In contrast to R packages, there is no a single right folder structure for analysis projects. Below, I present a simple yet extensible folder structure for data analysis project, based on several references that cover this issue.</p>
+
+<pre><code class="language-toml">name_of_project/
+|-  data
+|   |-  raw
+|   |-  processed
+|-  figures
+|-  reports
+|-  results
+|-  scripts
+|   |-  deprecated
+|-  .gitignore
+|-  name_of_project.Rproj
+|-  README.md
+</code></pre>
+
+<p>The parent folder that will contain all project&rsquo;s subfolders should have the same name as your project. Pick a good one. Spending an extra 5 minutes will save you from regrets in the future. The name should be short, concise, written in lower-case, and not contain any special symbols. One can apply similar <a href="http://r-pkgs.had.co.nz/package.html">strategies</a> as for naming packages.</p>
+
+<p>The folder <code>data</code> typically contains two subfolders, namely, <code>raw</code> and <code>processed</code>. The content of <code>raw</code> directory is data files of any kind, such as <code>.csv</code>, SAS, Excel, text and database files, etc. The content of this folder is <em>read only</em>, so that no scripts should change the original files or create new ones. For this purpose the <code>processed</code> directory is used: all processed, cleaned, and tidied datasets are saved here. It is a good practice to save files in R format, rather than in <code>.csv</code>, since the former one is a more efficient way of storing data (both in terms of space and time of reading/writing). The preference is given to <code>.rds</code> files over <code>.RData</code> (see why in Content of R files section). Again, files should have representative names (<code>merged_calls.rds</code> vs <code>dataset_1.rds</code>). Note that it should be possible to regenerate those datasets from your scripts. In other words, if you remove all files from this folder, it must be possible to restore all of them by executing your scripts that use only the data from <code>raw</code>.</p>
+
+<p>The folder <code>figures</code> is the place where you may store plots, diagrams and other figures. There is not much to say about it. Common extensions of such files are <code>.eps</code>, <code>.png</code>, <code>.pdf</code>, etc. Again, file names in the folder should be meaningful (the name <code>img1.png</code> does not represent anything).</p>
+
+<p>All reports live in directory with the corresponding name <code>reports</code>. These reports can be of any formats, such as LaTeX, Markdown, R Markdown, Jupyter Notebooks, etc. Currently, more and more people prefer rich documents with text and executable code to LaTeX and friends.</p>
+
+<p>Not all output object of the analysis are data files. For example, you have calibrated and fitted your deep learning network to the data, which took about an hour. Of course, it would be painful to retrain the model each time you run the script, and you want to save this model. Then, it is reasonable to save it in <code>results</code> with <code>.rmd</code> extension.</p>
+
+<p>Perhaps the first by importance folder is <code>scripts</code>. There you keep all your R scripts and codes. That is the exact place to use prefix numbers, if files should be run in a particular order (<a href="https://ptds2018.netlify.com/tutorials/style/">see previous tutorial</a>). If you have files in other scripted languages (e.g., Python), it better to locate them in this folder as well. There is also an important subfolder called <code>depricated</code>. Whenever you want to remove one or the other script, it is a good practice to move it to <code>depricated</code> at first iteration, and only they delete. The script you want to remove can contain functions or analysis used by other collaborators. Moving it firstly to <code>depricated</code> ensures that the file is not used by other collaborators.</p>
+
+<p>There are three important files in the project folder: <code>.gitignore</code>, <code>name_of_project.Rproj</code>, and <code>README.md</code>. The file <code>.gitignore</code> lists files that won&rsquo;t be added to Git system: LaTeX or C build artifacts, system files, very large files, or files generated for particular cases. Further, the <code>name_of_project.Rproj</code> contains options and meta-data of the project: encoding, the number of spaces used for indentation, whether or not to restore a workspace with launch, etc. The <code>README.md</code> briefly describes all high-level information about the project, like an abstract of a paper.</p>
+
+<p>The proposed folder structure is far from being exhaustive. You might need to introduce other folders, such as <code>paper</code> (where <code>.tex</code> version of a paper lives), <code>sources</code> ( a place for your compiled code here, e.g. C++), <code>references</code>, <code>presentations</code>, <code>NEWS.md</code>, <code>TODO.md</code>, etc. At the same time, keeping an empty folders could be misleading, and it is better to remove them (unless you are planning to store anything in them in the future).</p>
+
+<p>Several R packages, namely <a href="http://projecttemplate.net/architecture.html"><code>ProjectTemplate</code></a>, <a href="https://github.com/Pakillo/template"><code>template</code></a>, and  <a href="https://github.com/cboettig/template"><code>template</code></a> are dedicated to project structures. Also it is possible to construct a project tree by forking <a href="https://github.com/jhollist/manuscriptPackage">manuscriptPackage</a> or <a href="http://www.statsravingmad.com/measure/sample-r-project-structure/">sample-r-project</a> repositories (repo for short). Using a package or forking a repo allow for automated structure generation, but at the same time introduce many redundant and unnecessary folders and files.</p>
+
+<p>Finally, some scientists believe that all R projects should be in a shape of a package. Indeed, one can store data in <code>\data</code>, R scripts in <code>\R</code>, documentation in <code>\man</code>, and the paper <code>\vignette</code>. The nice thing about it that anyone familiar with an R package structure can immediately grasp where each type of a file located. On the other hand, the structure of R packages is tailored to serve its purpose &ndash; make a coherent <em>tool</em> for data scientists and not to produce a data product: there is no distinction between functions definitions and applications, no proper place for reports, and finally there are no place for other script languages that you can use (e.g, Bash, Python, etc.).</p>
+
+<h3 id="content-of-r-files">Content of R files</h3>
+
+<p>While there are no rules how to organize your R code, there are several dos and don&rsquo;ts that most of the time are not tough explicitly. I cover them below:</p>
+
+<ul>
+<li><p>Do not use the function <code>install.packages()</code> inside your scripts. You are not suppose to (re)install packages each time when you run your files. By default it is normally assumed that all packages that are used by a script are already installed.</p>
+
+<p>If there are many of them to install, it is better to create a file <code>configure.R</code>, that will install all packages:</p>
+
+<pre><code class="language-toml">pkgs &lt;- c(&quot;ggplot2&quot;, &quot;plyr&quot;)
+install.packages(pkgs)
+</code></pre>
+
+<p>The snippet above profits from the fact that <code>install.packages()</code> is a vectorized function. Anyway, most of the time, <code>install.packages()</code> is suppose to be called from the console, and not from the script.</p></li>
+
+<li><p>Do not use the function <code>require()</code>, unless it is a conscious choice. In contrast to <code>library()</code>, <code>require()</code> does not throw an error (only a warning) if the package is not installed.</p></li>
+
+<li><p>Use a character representation of the package name.</p>
+
+<pre><code class="language-toml"># Good 
+library(&quot;ggplot2&quot;)
+    
+# Bad
+library(ggplot2)
+</code></pre></li>
+
+<li><p>Load <em>only</em> those packages that are actually used in the script. Load packages at the beginning of the script.</p></li>
+
+<li><p>Do not use <code>rm(list = ls())</code> that erase your global environment. First, it could delete accidentally the precious heavy long-time-to-build object. Second, it gives an illusion of the fresh start of R.</p></li>
+
+<li><p>Do not use <code>setwd(&quot;/Users/irudnyts/path/that/only/I/have&quot;)</code>. It is very unlikely that someone except you will have the same path to the project. Instead, use a package <code>here</code> and relative paths. The package <code>here</code> automatically recognizes the path to the project, and starts from there:</p>
+
+<pre><code class="language-toml"># Good
+library(&quot;here&quot;)
+    
+cars &lt;- read.csv(file = here(&quot;data&quot;, &quot;raw&quot;, &quot;cars.csv&quot;))
+    
+# Bad
+setwd(&quot;/Users/irudnyts/path/that/only/I/have/data/raw&quot;)
+cars &lt;- read.csv(file = &quot;cars.csv&quot;)
+</code></pre></li>
+
+<li><p>If your script involves random generation, then set a seed by <code>set.seed()</code> function to get the same random split each time:</p>
+
+<pre><code class="language-toml"># Good 
+set.seed(1991)
+x &lt;- rnorm(100)
+    
+# Bad 
+x &lt;- rnorm(100)
+</code></pre></li>
+
+<li><p>Do not repeat yourself (<em>DRY</em>). In R context it means the following: if the code repeated more than to times, you had better wrap it into a function.</p>
+
+<pre><code class="language-toml"># Better
+fix_missing &lt;- function(x) {
+    x[x == -99] &lt;- NA
+    x
+}
+df[] &lt;- lapply(df, fix_missing)
+    
+# Bad
+df$a[df$a == -99] &lt;- NA
+df$b[df$b == -99] &lt;- NA
+df$c[df$c == -98] &lt;- NA
+df$d[df$d == -99] &lt;- NA
+df$e[df$e == -99] &lt;- NA
+df$f[df$g == -99] &lt;- NA
+</code></pre></li>
+
+<li><p>Separate function definitions from their applications.</p></li>
+
+<li><p>Use <code>saveRDS()</code> instead of <code>save()</code>:</p></li>
+</ul>
+
+<blockquote>
+<ul>
+<li><code>save()</code> saves the objects and their names together in the same file; <code>saveRDS()</code> only saves the value of a single object (its name is dropped).</li>
+<li><code>load()</code> loads the file saved by <code>save()</code>, and creates the objects with the saved names silently (if you happen to have objects in your current environment with the same names, these objects will be overridden); <code>readRDS()</code> only loads the value, and you have to assign the value to a variable.
+<cite> Yihui Xie </cite></li>
+</ul>
+</blockquote>
+
+<h3 id="inizializing-a-new-data-analysis-project">Inizializing a new data analysis project</h3>
+
+<p>Disclaimer: the procedure below can be done in different ways. This particular way is no better than the others, but from author opinion has the most logical flow.</p>
+
+<p>Prerequisites:</p>
+
+<ul>
+<li>Installed and configured Git</li>
+<li>Installed R and RStudio</li>
+<li>Existing account in Github</li>
+</ul>
+
+<p>Steps:</p>
+
+<ol>
+<li><p>Pick a good name (e.g., <code>beer</code>).</p></li>
+
+<li><p>In RStudio create a project:</p>
+
+<ul>
+<li>Navigate to File -&gt; New project&hellip;</li>
+<li>Select <code>New Directory</code></li>
+<li>Select <code>New project</code> (unless you are developing a package or a ShinyApp)</li>
+<li>Insert your picked name into <code>Directory name</code></li>
+<li>Check <code>Create a git repository</code>
+<br /></li>
+</ul>
+
+<p><img src="/tutorials/rstudio_new.png" alt="map" width="400px"/></p></li>
+</ol>
+
+<p>This creates a folder with the name of the project, initialize a local git repo, generate an <code>.Rproj</code> file, and a <code>.gitignore</code> file.</p>
+
+<ol>
+<li><p>Add a file structure as discussed in section, that is folder <code>data</code> (with <code>raw</code> and <code>processed</code> subfolders), <code>figures</code>, etc.</p></li>
+
+<li><p>Create a <code>README.md</code> file.</p>
+
+<p><img src="/tutorials/folders.png" alt="map" width="400px"/></p></li>
+
+<li><p>Launch <code>Terminal</code> and navigate your working directory (of <code>Terminal</code>, not <code>R</code>) to your project folder by, for instance, <code>cd /Users/irudnyts/Documents/projects/beer</code>.</p></li>
+
+<li><p>Record changes by <code>git add --all</code> and commit by <code>git commit -m &quot;Create a folder structure of the project.&quot;</code>. Traditionally the message of the first commit is simple <code>&quot;First commit.&quot;</code>, but I prefer to write something more conscious, like <code>&quot;Create a folder structure of the project.&quot;</code>.</p>
+
+<p><img src="/tutorials/bash.png" alt="map" width="400px"/></p>
+
+<p>Now all you changes are recoreded locally.</p>
+
+<p>Note also that Git does not record empty folders.</p></li>
+
+<li><p>Create a <a href="https://github.com/new">new repo</a> in GitHub (the same procedure holds for Bitbucket and Gitlab):</p>
+
+<ul>
+<li>Fill in <code>Repository name</code> with the same name as your project.</li>
+<li>Fill in <code>Description</code> with one line that briefly explains the intent of the project and ends with full stop.</li>
+<li>(Check <code>Private</code> for homeworks).</li>
+<li>Hit <code>Create repository</code>.
+<br /></li>
+</ul>
+
+<p><img src="/tutorials/github.png" alt="map" width="400px"/></p></li>
+
+<li><p>Connect your local repo to your Github repo by</p>
+
+<pre><code class="language-toml">git remote add origin git@github.com:irudnyts/beer.git
+git push -u origin master
+</code></pre>
+
+<p><img src="/tutorials/bash2.png" alt="map" width="400px"/></p>
+
+<p>Refresh the page at your browser to ensure that changes appear at Github repo (do not freak out if you do not see all folders you have created, Git does not record empty folders).</p></li>
+</ol>
+
+<h3 id="working-with-an-existing-data-analysis-project">Working with an existing data analysis project</h3>
+
+<ol>
+<li><p>Pull changes introduced by your collaborators by <code>git pull</code>.</p></li>
+
+<li><p>Modify your files. If you want to delete a script, first off, move it to <code>\depricated</code>, and then remove it from there during the next iteration.</p></li>
+
+<li><p>Add changes by <code>git add --all</code> and commit by <code>git commit -m &quot;A concious commit message.&quot;</code>.</p></li>
+
+<li><p>Push changes by <code>git push</code>. Merge changes if needed.</p></li>
+</ol>
+
+<h3 id="references">References</h3>
+
+<ul>
+<li><a href="http://r-pkgs.had.co.nz/">R packages</a></li>
+<li><a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">Project-oriented workflow</a></li>
+<li><a href="https://yihui.name/en/2017/12/save-vs-saverds/">save() vs saveRDS()</a></li>
+<li><a href="https://www.datacamp.com/community/blog/jupyter-notebook-r#alternatives">Jupyter And R Markdown: Notebooks With R</a></li>
+<li><a href="http://www.statsravingmad.com/measure/sample-r-project-structure/">A sample R project structure</a></li>
+<li><a href="https://github.com/IronistM/sample-r-project">sample-r-project repo</a></li>
+<li><a href="http://rmflight.github.io/posts/2014/07/vignetteAnalysis.html">Creating an analysis as a package and vignette</a></li>
+<li><a href="http://rmflight.github.io/posts/2014/07/analyses_as_packages.html">Analyses as Packages</a></li>
+<li><a href="https://www.r-bloggers.com/packages-vs-projecttemplate/">Packages vs ProjectTemplate</a></li>
+<li><a href="https://nicercode.github.io/blog/2013-05-17-organising-my-project/">Organizing the project directory</a></li>
+<li><a href="https://nicercode.github.io/blog/2013-04-05-projects/">Designing projects</a></li>
+<li><a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/">Project Management With RStudio</a></li>
+<li><a href="https://r-dir.com/blog/2013/11/folder-structure-for-data-analysis.html">Folder Structure for Data Analysis</a></li>
+<li><a href="https://github.com/AndersenLab/IBiS-Bootcamp/wiki/Organizing-files-for-data-analysis">Organizing files for data analysis</a></li>
+<li><a href="https://www.r-bloggers.com/a-meaningful-file-structure-for-r-projects/">A meaningful file structure for R projects</a></li>
+<li><a href="https://peerj.com/preprints/3192.pdf">Packaging data analytical work reproducibly using R (and friends)</a></li>
+<li><a href="https://thomasleeper.com/2015/05/open-science-language/">What&rsquo;s in a Name? The Concepts and Language of Replication and Reproducibility</a></li>
+<li><a href="https://thomasleeper.com/2016/11/analysis-as-package/">Packaging Your Reproducible Analysis</a></li>
+<li><a href="http://kbroman.org/Tools4RR/assets/lectures/06_org_eda_withnotes.pdf">Tools for Reproducible Research</a></li>
+<li><a href="https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html#r_code_is_great_for_reproducibility">Data Analysis and Visualization in R for Ecologists</a></li>
+<li><a href="https://gist.github.com/jennybc/362f52446fe1ebc4c49f">Stop the working directory insanity</a></li>
+<li><a href="https://github.com/jhollist/manuscriptPackage">manuscriptPackage</a></li>
+<li><a href="https://github.com/cboettig/template">cboettig/template</a></li>
+<li><a href="https://github.com/Pakillo/template">Pakillo/template</a></li>
+<li><a href="https://talesofr.wordpress.com/2017/12/12/a-minimal-project-tree-in-r/">A minimal Project Tree in R</a>
+-<a href="http://projecttemplate.net">ProjectTemplate</a></li>
+<li><a href="https://blog.davisvaughan.com/post/writing-a-paper-with-rstudio/">Writing a paper with RStudio</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/">Reproducibility vs. Replicability: A Brief History of a Confused Terminology</a></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/tutorials/style/" title="R Coding Style Guide"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/homeworks/" title="Homeworks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1567081516"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567081516"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567081516"></script>
+    <script src="/js/jquery.sticky.js?1567081516"></script>
+    <script src="/js/featherlight.min.js?1567081516"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567081516"></script>
+    <script src="/js/highlight.pack.js?1567081516"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567081516"></script>
+    <script src="/js/learn.js?1567081516"></script>
+    <script src="/js/hugo-learn.js?1567081516"></script>
+
+    <link href="/mermaid/mermaid.css?1567081516" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567081516"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

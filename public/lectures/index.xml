@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lectures on Programming tools for data science</title>
+    <link>/lectures/</link>
+    <description>Recent content in Lectures on Programming tools for data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 09 Aug 2018 17:26:08 +0200</lastBuildDate>
+    
+	<atom:link href="/lectures/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Supplementary material</title>
+      <link>/lectures/additional/</link>
+      <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
+      
+      <guid>/lectures/additional/</guid>
+      <description>We use this page to add supplementary material for the lectures.
+ Get R file from Lecture #1   Get RMarkdown file from Lecture #2   &amp;hellip;and the bibliography   &amp;hellip;and the HTML output   Get RMarkdown file from Lecture #4   Get R file from Lecture #5   Get slides from October 23 tutorial   Get R file from October 23 tutorial   Get R file from Lecture #6   Get slides from November 6 tutorial   Get R file from November 6 tutorial  ## Shiny App [Tutorials](https://shiny.</description>
+    </item>
+    
+  </channel>
+</rss>

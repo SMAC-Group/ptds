@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Programming tools for data science</title>
+    <link>/project/</link>
+    <description>Recent content in Project on Programming tools for data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 09 Aug 2018 17:26:52 +0200</lastBuildDate>
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Schedule</title>
+      <link>/project/schedule/</link>
+      <pubDate>Sat, 18 Aug 2018 17:46:41 +0200</pubDate>
+      
+      <guid>/project/schedule/</guid>
+      <description>gantt dateFormat YYYY-MM-DD title Schedule for the projects section Time during class time for proposal :active, des1, 2018-10-09, 1d time for project :active, des2, 2018-11-27, 1d time for project :active, des2, 2018-12-04, 1d time for project :active, des2, 2018-12-11, 1d section Deadlines proposal :crit, 2018-10-23, 1d projects :crit, 2018-12-18, 1d  -- </description>
+    </item>
+    
+    <item>
+      <title>Scope</title>
+      <link>/project/scope/</link>
+      <pubDate>Sat, 18 Aug 2018 17:32:51 +0200</pubDate>
+      
+      <guid>/project/scope/</guid>
+      <description>Your semester project is meant to showcase what you have learned in this class. You should choose a topic that you find interesting but that is also reasonable to complete within the scope of the class and the time at your disposal. Each project must respect the following criteria:
+ Propose a new visualization tool for an application you are interested in.
+ Involve a significant amount for programming done by all members of the group.</description>
+    </item>
+    
+    <item>
+      <title>Proposal</title>
+      <link>/project/proposal/</link>
+      <pubDate>Sat, 18 Aug 2018 17:35:57 +0200</pubDate>
+      
+      <guid>/project/proposal/</guid>
+      <description>Presentation of the proposal is held the 2018-10-23.
+ To make sure that your project is suitable we organize a project proposal presentation on October 23d, 2018. It consists of a 5 minutes presentation (make sure you respect that!) where you should try to &amp;ldquo;sell&amp;rdquo; your project idea to the class. This presentation can be done in any form but you should address the following points:
+ Problem / Topic: What problem or topic are you addressing?</description>
+    </item>
+    
+    <item>
+      <title>Final Project</title>
+      <link>/project/output/</link>
+      <pubDate>Sat, 18 Aug 2018 17:41:45 +0200</pubDate>
+      
+      <guid>/project/output/</guid>
+      <description>Presentations of the projects are held the 2018-12-18. You have 10 minutes of presentation + 5 minutes of questions per group. Each member should present a piece of the presentation.
+ The output of your project must be:
+ An awesome project!
+ A well documented GitHub repository (see e.g. https://github.com/SMAC-Group/ds) which should be called groupX_project where X is your group number.
+ A website showcasing your work (think of adding a screencast video) used as a GitHub page (see e.</description>
+    </item>
+    
+    <item>
+      <title>Groups</title>
+      <link>/project/groups/</link>
+      <pubDate>Wed, 19 Sep 2018 17:41:45 +0200</pubDate>
+      
+      <guid>/project/groups/</guid>
+      <description>) - Ali Karray () - Youness Zarhloul () - Maurizio Griffo () - Mohit Mehrotra () * Group 2 - **Emil Jellum** () - Louis Polet () - Cristina Montecchi () - Laura Agnese Marzorati () - Federico Baldo () * Group 3 - **Vanessa Armistead** () - Luisa Pricken () - Bart Roes () - Ameni Rouatbi () * Group 4 (ggplot3) - **Lumia Claramunt** () - Julien Kleinmann () - Constance Havret () - Azza Kammoun () - Sana Ghali () * Group 5 (The Jonquilles) - **David Germano** () - Patrik Grandadam () - Luca Bron () - Edgar Raisin () - Vincent Lomazzi () -- </description>
+    </item>
+    
+    <item>
+      <title>Peer grading</title>
+      <link>/project/example/</link>
+      <pubDate>Wed, 19 Sep 2018 13:18:34 +0200</pubDate>
+      
+      <guid>/project/example/</guid>
+      <description>In order to grade the other group, please send us your feedback by the 21st of December. Your report should have the following structure:
+ Group 1 (x / 27 points):
+ Overall quality (x / 3 points)
+ Interest and complexity of the subject (x / 3 points)
+ Presentation (x / 6 points)
+ Screencast (x / 3 points)
+ Shiny app (x / 3 points)
+ Provided documentation (x / 3 points)</description>
+    </item>
+    
+  </channel>
+</rss>

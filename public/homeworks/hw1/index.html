@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="This website provides the support for the class Programming tools in data science given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall (currently 2019)">
+<meta name="author" content="Samuel Orso">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>homework #1 :: Programming tools for data science</title>
+
+    
+    <link href="/css/nucleus.css?1567081517" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567081517" rel="stylesheet">
+    <link href="/css/hybrid.css?1567081517" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567081517" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567081517" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567081517" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567081517" rel="stylesheet">
+    <link href="/css/theme.css?1567081517" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567081517" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1567081517" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1567081517"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145262296-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </head>
+  <body class="" data-url="/homeworks/hw1/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<img src="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/hec_logo_white.png" alt="hec_logo" height="80" width="155">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1567081517"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567081517"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1567081517"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/syllabus/">
+          <b>1. </b>Syllabus
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/general/" title="General information" class="dd-item ">
+        <a href="/syllabus/general/">
+        General information
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/coursedescr/" title="Course description" class="dd-item ">
+        <a href="/syllabus/coursedescr/">
+        Course description
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/grading/" title="Grading" class="dd-item ">
+        <a href="/syllabus/grading/">
+        Grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/communication/" title="Communication" class="dd-item ">
+        <a href="/syllabus/communication/">
+        Communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item ">
+        <a href="/syllabus/material/">
+        Material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/final/" title="Convinced?" class="dd-item ">
+        <a href="/syllabus/final/">
+        Convinced?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/lectures/">
+          <b>2. </b>Lectures
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/lectures/additional/" title="Supplementary material" class="dd-item ">
+        <a href="/lectures/additional/">
+        Supplementary material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tutorials/">
+          <b>2. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item ">
+        <a href="/tutorials/style/">
+        R Coding Style Guide
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/workflow/" title="Project-oriented workflow" class="dd-item ">
+        <a href="/tutorials/workflow/">
+        Project-oriented workflow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/homeworks/">
+          <b>3. </b>Homeworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/schedule/" title="Schedule" class="dd-item ">
+        <a href="/homeworks/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw0/" title="homework #0" class="dd-item ">
+        <a href="/homeworks/hw0/">
+        homework #0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw1/" title="homework #1" class="dd-item active">
+        <a href="/homeworks/hw1/">
+        homework #1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/project/" title="Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/">
+          <b>4. </b>Project
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/schedule/" title="Schedule" class="dd-item ">
+        <a href="/project/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/scope/" title="Scope" class="dd-item ">
+        <a href="/project/scope/">
+        Scope
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/proposal/" title="Proposal" class="dd-item ">
+        <a href="/project/proposal/">
+        Proposal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/output/" title="Final Project" class="dd-item ">
+        <a href="/project/output/">
+        Final Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/groups/" title="Groups" class="dd-item ">
+        <a href="/project/groups/">
+        Groups
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/example/" title="Peer grading" class="dd-item ">
+        <a href="/project/example/">
+        Peer grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/">
+          <b>5. </b>Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/SMAC-Group/ptds/"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://piazza.com/class/jkmo9ble14l7mf?cid=3#"><i class='fa fa-fw fa-users'></i> Discussion forum</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://smac-group.github.io/ds/"><i class='fa fa-fw fa-book'></i> Lectures</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comhomeworks/hw1.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Programming tools in data science</a> > <a href='/homeworks/'>Homeworks</a> > homework #1
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              homework #1
+            </h1>
+          
+
+        
+
+
+
+
+<div class="notices warning" ><p><strong>Deadline: 2018-10-15 at 4pm</strong><br />
+To submit your work, add <code>samorso</code> and <code>irudnyts</code> as collaborators to your private GitHub repo.<br />
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.</p>
+</div>
+
+
+<p>The objectives of this homework assignment are the followings:</p>
+
+<ul>
+<li>Build your own RMarkdown document.<br /></li>
+<li>Master different aspects of RMarkdown syntax.<br /></li>
+<li>Become familiar with GitHub as a collaborative tool.</li>
+</ul>
+
+<p>To begin with, create a (preferably private) GitHub repository for your group, and name it <code>ptds2018hw1</code>. Once again, make sure to add <code>samorso</code> and <code>irudnyts</code> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
+
+<ul>
+<li>All members of the group must commit at least once.<br /></li>
+<li>All commit messages must be reasonably clear and meaningful.<br /></li>
+<li>Your GitHub repository must include at least one issue containing some form of TO DO list.<br /></li>
+</ul>
+
+<p>In your repository, create a RMarkdown file called <code>hw1.Rmd</code> providing an HTML output with the theme <code>cerulean</code> and syntax highlighting <code>tango</code>. This file should contain the following elements:</p>
+
+<ul>
+<li>A &ldquo;title&rdquo; section which should at least include:<br />
+
+<ul>
+<li>A title (e.g. Homework 1)<br /></li>
+<li>The authors<br /></li>
+<li>The date (think of using <code>Sys.time()</code>)<br /></li>
+</ul></li>
+<li>A section called &ldquo;Introduction&rdquo; where you provide a short summary of the structure of your homework. Moreover, record a short video to introduce your group and include it in your RMarkdown document.<br /></li>
+<li>A section called &ldquo;Group Members&rdquo;. This section should have one sub-section for each group member in your team. For example, a group with three members should have three sub-sections. Each of these sub-sections (named after each group member) should include small biographies containing at least the following elements:
+
+<ul>
+<li>A picture of your choice (preferably of yourself). Make sure to include a caption for this image.<br /></li>
+<li>A paragraph describing your favorite hobby as well as one interesting fact about yourself (preferably true).<br /></li>
+<li>Your favorite quote in blockquote format. Make sure to reference your quote using BibTex.<br /></li>
+<li>A table having two columns (first column containing the classes you are following this semester; second column containing the time of these classes).<br /></li>
+</ul></li>
+<li>A section called &ldquo;RMarkdown Syntax&rdquo;, where you will demonstrate your RMarkdown skills! In this section make sure to:
+
+<ul>
+<li>Show an example where the chunk option <code>cache = T</code> leads to a misleading answer. This example must be different from the one presented in the textbook.<br /></li>
+<li>Simulate 100 random samples from a standard normal distribution using the function <code>rnorm()</code>. Store these 100 values in a vector called <code>x</code>. Then, compute the empirical median, mean and variance of <code>x</code>. Are these results different from 0, 0 and 1 (their respective theoretical values)? Is this result surprising? Justify your answer.<br /></li>
+<li>Include a graph showing the histogram of <code>x</code> (make sure to include a caption to this figure). You can use the R function <code>hist()</code> or the <code>ggplot2</code> function.<br /></li>
+<li>Include the following equation: <img src="/homeworks/eq_hw1.png" alt="eq" /></li>
+<li>Include the following in-line equation: <img src="/homeworks/eq2_hw1.png" alt="eq2" width="200px"/><br /></li>
+<li>Include the following text in blue: &ldquo;Vérité dans un temps, erreur dans un autre.&rdquo;, Charles de Montesquieu<br /></li>
+<li>Include a &ldquo;More info&rdquo; button with hide/unhide functionality.<br /></li>
+<li>Include a &ldquo;color box&rdquo;&rdquo; with some text.<br /></li>
+</ul></li>
+<li>A &ldquo;References&rdquo; section that contains all the references used in your document.</li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/homeworks/hw0/" title="homework #0"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/project/" title="Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567081517"></script>
+    <script src="/js/jquery.sticky.js?1567081517"></script>
+    <script src="/js/featherlight.min.js?1567081517"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567081517"></script>
+    <script src="/js/highlight.pack.js?1567081517"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567081517"></script>
+    <script src="/js/learn.js?1567081517"></script>
+    <script src="/js/hugo-learn.js?1567081517"></script>
+
+    <link href="/mermaid/mermaid.css?1567081517" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567081517"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

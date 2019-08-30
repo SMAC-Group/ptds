@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="This website provides the support for the class Programming tools in data science given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall (currently 2019)">
+<meta name="author" content="Samuel Orso">
+
+    <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
+
+    <title>Resources :: Programming tools for data science</title>
+
+    
+    <link href="/css/nucleus.css?1567081517" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1567081517" rel="stylesheet">
+    <link href="/css/hybrid.css?1567081517" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1567081517" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1567081517" rel="stylesheet">
+    <link href="/css/auto-complete.css?1567081517" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1567081517" rel="stylesheet">
+    <link href="/css/theme.css?1567081517" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1567081517" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1567081517" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1567081517"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145262296-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </head>
+  <body class="" data-url="/resources/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<img src="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/hec_logo_white.png" alt="hec_logo" height="80" width="155">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1567081517"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1567081517"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1567081517"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/syllabus/" title="Syllabus" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/syllabus/">
+          <b>1. </b>Syllabus
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/general/" title="General information" class="dd-item ">
+        <a href="/syllabus/general/">
+        General information
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/coursedescr/" title="Course description" class="dd-item ">
+        <a href="/syllabus/coursedescr/">
+        Course description
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/grading/" title="Grading" class="dd-item ">
+        <a href="/syllabus/grading/">
+        Grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/communication/" title="Communication" class="dd-item ">
+        <a href="/syllabus/communication/">
+        Communication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item ">
+        <a href="/syllabus/material/">
+        Material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/syllabus/final/" title="Convinced?" class="dd-item ">
+        <a href="/syllabus/final/">
+        Convinced?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/lectures/" title="Lectures" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/lectures/">
+          <b>2. </b>Lectures
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/lectures/additional/" title="Supplementary material" class="dd-item ">
+        <a href="/lectures/additional/">
+        Supplementary material
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tutorials/">
+          <b>2. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item ">
+        <a href="/tutorials/style/">
+        R Coding Style Guide
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/workflow/" title="Project-oriented workflow" class="dd-item ">
+        <a href="/tutorials/workflow/">
+        Project-oriented workflow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/homeworks/">
+          <b>3. </b>Homeworks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/schedule/" title="Schedule" class="dd-item ">
+        <a href="/homeworks/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw0/" title="homework #0" class="dd-item ">
+        <a href="/homeworks/hw0/">
+        homework #0
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/homeworks/hw1/" title="homework #1" class="dd-item ">
+        <a href="/homeworks/hw1/">
+        homework #1
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/project/" title="Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/project/">
+          <b>4. </b>Project
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/schedule/" title="Schedule" class="dd-item ">
+        <a href="/project/schedule/">
+        Schedule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/scope/" title="Scope" class="dd-item ">
+        <a href="/project/scope/">
+        Scope
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/proposal/" title="Proposal" class="dd-item ">
+        <a href="/project/proposal/">
+        Proposal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/output/" title="Final Project" class="dd-item ">
+        <a href="/project/output/">
+        Final Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/groups/" title="Groups" class="dd-item ">
+        <a href="/project/groups/">
+        Groups
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/project/example/" title="Peer grading" class="dd-item ">
+        <a href="/project/example/">
+        Peer grading
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/" title="Resources" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/resources/">
+          <b>5. </b>Resources
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/SMAC-Group/ptds/"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://piazza.com/class/jkmo9ble14l7mf?cid=3#"><i class='fa fa-fw fa-users'></i> Discussion forum</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://smac-group.github.io/ds/"><i class='fa fa-fw fa-book'></i> Lectures</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comresources/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Programming tools in data science</a> > Resources
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+	
+
+<h1 id="resources">Resources</h1>
+
+<h2 id="getting-started-with-r-and-rstudio">Getting started with R and Rstudio</h2>
+
+<h4 id="the-cran-website-https-cran-r-project-org"><a href="https://cran.r-project.org/">The CRAN website</a></h4>
+
+<p>CRAN is a network of ftp and web servers around the world that store identical,
+up-to-date, versions of R and its documentation.</p>
+
+<h4 id="an-introduction-to-r-https-cran-r-project-org-doc-manuals-r-release-r-intro-pdf"><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">An Introduction to R</a></h4>
+
+<p>This official and up-to-date tutorial, gives an introduction to the language
+and how to use R for doing statistical analysis and graphics.</p>
+
+<h4 id="rstudio-https-www-rstudio-com-products-rstudio"><a href="https://www.rstudio.com/products/rstudio/">RStudio</a></h4>
+
+<p>RStudio is an integrated development environment (IDE) for R.
+It includes a console, syntax-highlighting editor that supports direct code
+execution, as well as tools for plotting, history, debugging and workspace
+management.</p>
+
+<h4 id="rstudio-cheat-sheets-https-www-rstudio-com-resources-cheatsheets"><a href="https://www.rstudio.com/resources/cheatsheets/">Rstudio cheat sheets</a></h4>
+
+<p>A trove of cheat sheets below to make it easy to learn about and use some of
+R&rsquo;s most useful packages.</p>
+
+<h4 id="r-packages-for-data-science-https-www-tidyverse-org"><a href="https://www.tidyverse.org/">R packages for data science</a></h4>
+
+<p>The tidyverse is an opinionated collection of R packages designed for data
+science. All packages share an underlying design philosophy, grammar, and
+data structures.</p>
+
+<h2 id="online-learning">Online learning</h2>
+
+<h4 id="coding-club-s-tutorials-https-ourcodingclub-github-io"><a href="https://ourcodingclub.github.io/">Coding club&rsquo;s tutorials</a></h4>
+
+<blockquote>
+<p>Our mission is to create a fun and supportive environment where we develop programming and statistics skills together, using R.</p>
+
+<p>We want to replace statistics anxiety and code fear with inspiration and motivation to learn, and here we will share our experience.</p>
+</blockquote>
+
+<h4 id="datacamp-s-free-r-tutorial-https-www-datacamp-com-courses-free-introduction-to-r-and-try-r-by-code-school-http-tryr-codeschool-com"><a href="https://www.datacamp.com/courses/free-introduction-to-r">Datacamp&rsquo;s free R tutorial</a> and <a href="http://tryr.codeschool.com/">Try R by Code School</a></h4>
+
+<p>Both sites provide interactive lessons that will get you writing real code in minutes. They are a great place to make mistakes and test out new skills. You are told immediately when you go wrong and given a chance to fix your code.</p>
+
+<h4 id="writing-functions-in-r-https-www-datacamp-com-courses-writing-functions-in-r"><a href="https://www.datacamp.com/courses/writing-functions-in-r">Writing functions in R</a></h4>
+
+<p>This course will teach you the fundamentals of writing functions in R so that, among other things, you can make your code more readable, avoid coding errors, and automate repetitive tasks.</p>
+
+<h4 id="introduction-to-the-tidyverse-https-www-datacamp-com-courses-introduction-to-the-tidyverse"><a href="https://www.datacamp.com/courses/introduction-to-the-tidyverse">Introduction to the tidyverse</a></h4>
+
+<p>This is an introduction to the dplyr and ggplot2 packages through exploration and visualization of country data over time.
+This is a suitable course for people who have no or limited experience in R and are interested in learning to perform data analysis.</p>
+
+<h4 id="data-visualisation-with-ggplot2-https-www-datacamp-com-courses-data-visualization-with-ggplot2-1"><a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1">Data visualisation with ggplot2</a></h4>
+
+<p>Covers the basics of ggplot2.
+Followed by part 2 which covers more advanced topics.</p>
+
+<h4 id="exploratory-data-analysis-in-r-a-case-study-https-www-datacamp-com-courses-exploratory-data-analysis-in-r-case-study"><a href="https://www.datacamp.com/courses/exploratory-data-analysis-in-r-case-study">Exploratory data analysis in R: a case study</a></h4>
+
+<p>This course brings ggplot2 and dplyr into action in an in-depth analysis of
+United Nations voting data. The course also introduces broom for tidying
+model output and the tidyr package for wrangling data into an explorable shape.</p>
+
+<h2 id="books">Books</h2>
+
+<h4 id="advanced-r-http-adv-r-had-co-nz"><a href="http://adv-r.had.co.nz/">Advanced R</a></h4>
+
+<blockquote>
+<p>The book is designed primarily for R users who want to improve their
+programming skills and understanding of the language.
+It should also be useful for programmers coming to R from other languages,
+as it explains some of R’s quirks and shows how some parts that seem horrible
+do have a positive side.
+<cite> Hadley Wickham </cite></p>
+</blockquote>
+
+<h4 id="r-for-data-science-http-r4ds-had-co-nz"><a href="http://r4ds.had.co.nz/">R for Data Science</a></h4>
+
+<blockquote>
+<p>This book will teach you how to do data science with R: You&rsquo;ll learn how to
+get your data into R, get it into the most useful structure, transform it,
+visualise it and model it. In this book, you will find a practicum of skills
+for data science.
+<cite> Garrett Grolemund and Hadley Wickham </cite></p>
+</blockquote>
+
+<h2 id="misc">Misc</h2>
+
+<h4 id="easy-web-applications-in-r-https-www-rstudio-com-products-shiny"><a href="https://www.rstudio.com/products/shiny/">Easy web applications in R</a></h4>
+
+<p>Shiny is an open source R package that provides an elegant and powerful web
+framework for building web applications using R.
+Shiny helps you turn your analyses into interactive web applications without
+requiring HTML, CSS, or JavaScript knowledge.</p>
+
+<h4 id="rcpp-for-seamless-r-and-c-integration-http-www-rcpp-org"><a href="http://www.rcpp.org/">Rcpp for Seamless R and C++ Integration</a></h4>
+
+<p>The Rcpp package has become the most widely used language extension for R,
+the powerful environment and language for computing with data.
+As of May 2017, 1026 packages on CRAN and a further 91 on BioConductor
+deploy Rcpp to extend R, to accelerate computations and to connect to other
+C++ projects.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/project/example/" title="Peer grading"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/syllabus/" title="Syllabus" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.min.js?1567081517"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1567081517"></script>
+    <script src="/js/jquery.sticky.js?1567081517"></script>
+    <script src="/js/featherlight.min.js?1567081517"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1567081517"></script>
+    <script src="/js/highlight.pack.js?1567081517"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1567081517"></script>
+    <script src="/js/learn.js?1567081517"></script>
+    <script src="/js/hugo-learn.js?1567081517"></script>
+
+    <link href="/mermaid/mermaid.css?1567081517" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1567081517"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

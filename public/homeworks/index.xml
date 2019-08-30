@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeworks on Programming tools for data science</title>
+    <link>/homeworks/</link>
+    <description>Recent content in Homeworks on Programming tools for data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 09 Aug 2018 17:26:19 +0200</lastBuildDate>
+    
+	<atom:link href="/homeworks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Schedule</title>
+      <link>/homeworks/schedule/</link>
+      <pubDate>Fri, 17 Aug 2018 17:10:54 +0200</pubDate>
+      
+      <guid>/homeworks/schedule/</guid>
+      <description>gantt dateFormat YYYY-MM-DD title Schedule for the homeworks section Practicals homework 0 :active, des1, 2018-09-18, 1d homework 1 :active, des2, 2018-09-25, 2018-10-02 homework 2 :active, des3, 2018-10-16, 2018-10-23 homework 3 :active, des4, 2018-10-30, 2018-11-06 homework 4 :active, des5, 2018-11-13, 2018-11-20 section Deadlines homework 1 :crit, 2018-10-15, 1d homework 2 :crit, 2018-11-05, 1d homework 3 :crit, 2018-11-19, 1d homework 4 :crit, 2018-12-03, 1d  -- </description>
+    </item>
+    
+    <item>
+      <title>homework #0</title>
+      <link>/homeworks/hw0/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:51 +0200</pubDate>
+      
+      <guid>/homeworks/hw0/</guid>
+      <description>Homework generously provided by the Data Science in Business Analytics class.
+This homework is optional and is not graded.
+ In this optional tutorial you will get an overview of the basic programming concepts in R and main data types. Just enough to get you up and running essential R code. However, for true &amp;ldquo;beginners&amp;rdquo;, we highly recommend going through Advanced R - Chapter &amp;lsquo;Foundations&amp;rsquo; from which the content of this assignment is mainly (mostly) inspired by.</description>
+    </item>
+    
+    <item>
+      <title>homework #1</title>
+      <link>/homeworks/hw1/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:54 +0200</pubDate>
+      
+      <guid>/homeworks/hw1/</guid>
+      <description>Deadline: 2018-10-15 at 4pm
+To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
+ The objectives of this homework assignment are the followings:
+ Build your own RMarkdown document.
+ Master different aspects of RMarkdown syntax.
+ Become familiar with GitHub as a collaborative tool.  To begin with, create a (preferably private) GitHub repository for your group, and name it ptds2018hw1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming tools in data science on Programming tools for data science</title>
+    <link>/</link>
+    <description>Recent content in Programming tools in data science on Programming tools for data science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 09 Aug 2019 16:46:51 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Supplementary material</title>
+      <link>/lectures/additional/</link>
+      <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
+      
+      <guid>/lectures/additional/</guid>
+      <description>We use this page to add supplementary material for the lectures.
+ Get R file from Lecture #1   Get RMarkdown file from Lecture #2   &amp;hellip;and the bibliography   &amp;hellip;and the HTML output   Get RMarkdown file from Lecture #4   Get R file from Lecture #5   Get slides from October 23 tutorial   Get R file from October 23 tutorial   Get R file from Lecture #6   Get slides from November 6 tutorial   Get R file from November 6 tutorial  ## Shiny App [Tutorials](https://shiny.</description>
+    </item>
+    
+    <item>
+      <title>R Coding Style Guide</title>
+      <link>/tutorials/style/</link>
+      <pubDate>Mon, 03 Sep 2018 11:18:38 +0200</pubDate>
+      
+      <guid>/tutorials/style/</guid>
+      <description>Good coding style is like using correct punctuation. You can manage without it, but it sure makes things easier to read.  Hadley Wickham 
+ Introduction A language is a tool that allows human beings to interact and communicate with each other. The clearer we express ourselves, the better an idea is transferred from our mind to the other. The same applies to programming languages: concise, clear and consistent codes are easier to read and/or edit.</description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/project/schedule/</link>
+      <pubDate>Sat, 18 Aug 2018 17:46:41 +0200</pubDate>
+      
+      <guid>/project/schedule/</guid>
+      <description>gantt dateFormat YYYY-MM-DD title Schedule for the projects section Time during class time for proposal :active, des1, 2018-10-09, 1d time for project :active, des2, 2018-11-27, 1d time for project :active, des2, 2018-12-04, 1d time for project :active, des2, 2018-12-11, 1d section Deadlines proposal :crit, 2018-10-23, 1d projects :crit, 2018-12-18, 1d  -- </description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/homeworks/schedule/</link>
+      <pubDate>Fri, 17 Aug 2018 17:10:54 +0200</pubDate>
+      
+      <guid>/homeworks/schedule/</guid>
+      <description>gantt dateFormat YYYY-MM-DD title Schedule for the homeworks section Practicals homework 0 :active, des1, 2018-09-18, 1d homework 1 :active, des2, 2018-09-25, 2018-10-02 homework 2 :active, des3, 2018-10-16, 2018-10-23 homework 3 :active, des4, 2018-10-30, 2018-11-06 homework 4 :active, des5, 2018-11-13, 2018-11-20 section Deadlines homework 1 :crit, 2018-10-15, 1d homework 2 :crit, 2018-11-05, 1d homework 3 :crit, 2018-11-19, 1d homework 4 :crit, 2018-12-03, 1d  -- </description>
+    </item>
+    
+    <item>
+      <title>General information</title>
+      <link>/syllabus/general/</link>
+      <pubDate>Thu, 09 Aug 2018 15:46:40 +0200</pubDate>
+      
+      <guid>/syllabus/general/</guid>
+      <description> Location and Time  Location: Time: Tuesdays 8:30AM - 12AM  Course Websites  Course website: https://ptds.netlify.com/ Online textbook: http://r.smac-group.com/ Discussion Forum: https://piazza.com/unil.ch/fall2019/ptds2019/home  Course Staff Instructor  Name: Samuel Orso Email: Samuel.Orso@unil.ch Office: Anthropole/3090.1 Office Hours: Appointment may be made upon request.  find me on GitHub  Teaching Assistant  Name: Iegor Rudnytskyi Email: Iegor.Rudnytskyi@unil.ch Office: Office Hours:  find me on GitHub  </description>
+    </item>
+    
+    <item>
+      <title>Project-oriented workflow</title>
+      <link>/tutorials/workflow/</link>
+      <pubDate>Mon, 03 Sep 2018 11:19:38 +0200</pubDate>
+      
+      <guid>/tutorials/workflow/</guid>
+      <description>It’s like agreeing that we will all drive on the left or the right. A hallmark of civilization is following conventions that constrain your behavior a little, in the name of public safety.  Jenny Bryan 
+ Introduction In this tutorial we will learn key aspects of making a good research project:
+ reproducible portable self-contained  In data science context, reproducibility means that the whole analysis can be recreated (or repeated) from the fresh start and raw data and get exactly the same results.</description>
+    </item>
+    
+    <item>
+      <title>Scope</title>
+      <link>/project/scope/</link>
+      <pubDate>Sat, 18 Aug 2018 17:32:51 +0200</pubDate>
+      
+      <guid>/project/scope/</guid>
+      <description>Your semester project is meant to showcase what you have learned in this class. You should choose a topic that you find interesting but that is also reasonable to complete within the scope of the class and the time at your disposal. Each project must respect the following criteria:
+ Propose a new visualization tool for an application you are interested in.
+ Involve a significant amount for programming done by all members of the group.</description>
+    </item>
+    
+    <item>
+      <title>homework #0</title>
+      <link>/homeworks/hw0/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:51 +0200</pubDate>
+      
+      <guid>/homeworks/hw0/</guid>
+      <description>Homework generously provided by the Data Science in Business Analytics class.
+This homework is optional and is not graded.
+ In this optional tutorial you will get an overview of the basic programming concepts in R and main data types. Just enough to get you up and running essential R code. However, for true &amp;ldquo;beginners&amp;rdquo;, we highly recommend going through Advanced R - Chapter &amp;lsquo;Foundations&amp;rsquo; from which the content of this assignment is mainly (mostly) inspired by.</description>
+    </item>
+    
+    <item>
+      <title>Course description</title>
+      <link>/syllabus/coursedescr/</link>
+      <pubDate>Thu, 09 Aug 2018 16:46:34 +0200</pubDate>
+      
+      <guid>/syllabus/coursedescr/</guid>
+      <description>This class is intended to introduce to the students a wide range of programming tools using the R language. Tentative list of topics that will be discussed in this class are listed below:
+ Reproducible research: knitr and rmarkdown Version control: GitHub Introduction to programming: Data structures, logical operators, control structures and functions Visualizations: Exploratory data analysis with Base R and ggplot2 R packages: Construction of R-packages using devtools, roxygen2 and pkgdown Communication: webiste creation via blogdown, Web application via shiny Web scraping: Automatic extraction of data from websites using SelectorGadget, rvest and quantmod High performance computing: R and C++ integration via Rcpp, parallel computing.</description>
+    </item>
+    
+    <item>
+      <title>Proposal</title>
+      <link>/project/proposal/</link>
+      <pubDate>Sat, 18 Aug 2018 17:35:57 +0200</pubDate>
+      
+      <guid>/project/proposal/</guid>
+      <description>Presentation of the proposal is held the 2018-10-23.
+ To make sure that your project is suitable we organize a project proposal presentation on October 23d, 2018. It consists of a 5 minutes presentation (make sure you respect that!) where you should try to &amp;ldquo;sell&amp;rdquo; your project idea to the class. This presentation can be done in any form but you should address the following points:
+ Problem / Topic: What problem or topic are you addressing?</description>
+    </item>
+    
+    <item>
+      <title>homework #1</title>
+      <link>/homeworks/hw1/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:54 +0200</pubDate>
+      
+      <guid>/homeworks/hw1/</guid>
+      <description>Deadline: 2018-10-15 at 4pm
+To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
+ The objectives of this homework assignment are the followings:
+ Build your own RMarkdown document.
+ Master different aspects of RMarkdown syntax.
+ Become familiar with GitHub as a collaborative tool.  To begin with, create a (preferably private) GitHub repository for your group, and name it ptds2018hw1.</description>
+    </item>
+    
+    <item>
+      <title>Grading</title>
+      <link>/syllabus/grading/</link>
+      <pubDate>Thu, 09 Aug 2018 16:46:59 +0200</pubDate>
+      
+      <guid>/syllabus/grading/</guid>
+      <description>There are 60 points in total for this class. The final grades are given as follows:
+   Grade Points     6.0 57-60   5.5 52-56   5.0 47-51   4.5 42-46   4.0 37-41   3.5 32-36   3.0 27-31   2.5 22-26   2.0 17-21   1.5 12-16   1.0 0-11    Learning outcomes will be assessed based on the performances within each of the following categories:</description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>/syllabus/communication/</link>
+      <pubDate>Fri, 09 Aug 2019 16:46:51 +0200</pubDate>
+      
+      <guid>/syllabus/communication/</guid>
+      <description>Piazza Follow this link to sign-up to Pizza.
+ We will be using Piazza for class-related discussion and questions, to help you benefit from each other’s questions and the collective knowledge of your classmates and instructors. Questions can be posted to the entire class (for content-related questions). I encourage you to ask questions if you are struggling to understand a concept, and to answer your classmates’ questions when you can.</description>
+    </item>
+    
+    <item>
+      <title>Final Project</title>
+      <link>/project/output/</link>
+      <pubDate>Sat, 18 Aug 2018 17:41:45 +0200</pubDate>
+      
+      <guid>/project/output/</guid>
+      <description>Presentations of the projects are held the 2018-12-18. You have 10 minutes of presentation + 5 minutes of questions per group. Each member should present a piece of the presentation.
+ The output of your project must be:
+ An awesome project!
+ A well documented GitHub repository (see e.g. https://github.com/SMAC-Group/ds) which should be called groupX_project where X is your group number.
+ A website showcasing your work (think of adding a screencast video) used as a GitHub page (see e.</description>
+    </item>
+    
+    <item>
+      <title>Groups</title>
+      <link>/project/groups/</link>
+      <pubDate>Wed, 19 Sep 2018 17:41:45 +0200</pubDate>
+      
+      <guid>/project/groups/</guid>
+      <description>) - Ali Karray () - Youness Zarhloul () - Maurizio Griffo () - Mohit Mehrotra () * Group 2 - **Emil Jellum** () - Louis Polet () - Cristina Montecchi () - Laura Agnese Marzorati () - Federico Baldo () * Group 3 - **Vanessa Armistead** () - Luisa Pricken () - Bart Roes () - Ameni Rouatbi () * Group 4 (ggplot3) - **Lumia Claramunt** () - Julien Kleinmann () - Constance Havret () - Azza Kammoun () - Sana Ghali () * Group 5 (The Jonquilles) - **David Germano** () - Patrik Grandadam () - Luca Bron () - Edgar Raisin () - Vincent Lomazzi () -- </description>
+    </item>
+    
+    <item>
+      <title>Material</title>
+      <link>/syllabus/material/</link>
+      <pubDate>Wed, 15 Aug 2018 19:08:54 +0200</pubDate>
+      
+      <guid>/syllabus/material/</guid>
+      <description>Laptops Bring a laptop to the class every week if you have one. We encourage students to work collaboratively, so we would like to have at least one laptop for every 2 or 3 students. Since the homeworks and the project are the work of a team, we encourage you to team-up with students that possess a laptop. In the case you plan to buy a laptop, remember that the students from Swiss Universities have preferential prices via the Neptun Projekt or the EPFL&amp;rsquo;s Poseidon.</description>
+    </item>
+    
+    <item>
+      <title>Peer grading</title>
+      <link>/project/example/</link>
+      <pubDate>Wed, 19 Sep 2018 13:18:34 +0200</pubDate>
+      
+      <guid>/project/example/</guid>
+      <description>In order to grade the other group, please send us your feedback by the 21st of December. Your report should have the following structure:
+ Group 1 (x / 27 points):
+ Overall quality (x / 3 points)
+ Interest and complexity of the subject (x / 3 points)
+ Presentation (x / 6 points)
+ Screencast (x / 3 points)
+ Shiny app (x / 3 points)
+ Provided documentation (x / 3 points)</description>
+    </item>
+    
+    <item>
+      <title>Convinced?</title>
+      <link>/syllabus/final/</link>
+      <pubDate>Fri, 17 Aug 2018 13:39:19 +0200</pubDate>
+      
+      <guid>/syllabus/final/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
