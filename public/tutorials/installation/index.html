@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 
-    <title>Material :: Programming tools for data science</title>
+    <title>Installation and Setup :: Programming tools for data science</title>
 
     
     <link href="/css/nucleus.css?1568037268" rel="stylesheet">
@@ -79,7 +79,7 @@ if (!doNotTrack) {
 </script>
 
   </head>
-  <body class="" data-url="/syllabus/material/">
+  <body class="" data-url="/tutorials/installation/">
     <nav id="sidebar" class="">
 
 
@@ -122,7 +122,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/syllabus/" title="Syllabus" class="dd-item 
-        parent
+        
         
         
         ">
@@ -222,7 +222,7 @@ if (!doNotTrack) {
  
   
     
-      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item active">
+      <li data-nav-id="/syllabus/material/" title="Material" class="dd-item ">
         <a href="/syllabus/material/">
         Material
         
@@ -338,7 +338,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
-        
+        parent
         
         
         ">
@@ -362,7 +362,7 @@ if (!doNotTrack) {
  
   
     
-      <li data-nav-id="/tutorials/installation/" title="Installation and Setup" class="dd-item ">
+      <li data-nav-id="/tutorials/installation/" title="Installation and Setup" class="dd-item active">
         <a href="/tutorials/installation/">
         Installation and Setup
         
@@ -725,7 +725,7 @@ if (!doNotTrack) {
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comsyllabus/material.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comtutorials/installation.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -756,7 +756,7 @@ if (!doNotTrack) {
             
           
           
-            <a href='/'>Programming tools in data science</a> > <a href='/syllabus/'>Syllabus</a> > Material
+            <a href='/'>Programming tools in data science</a> > <a href='/tutorials/'>Tutorials</a> > Installation and Setup
           
          
           
@@ -773,12 +773,20 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#1-installing-r-and-rstudio">1. Installing R and RStudio</a>
 <ul>
-<li><a href="#laptops">Laptops</a></li>
-<li><a href="#textbooks">Textbooks</a></li>
-<li><a href="#software">Software</a></li>
+<li><a href="#1-1-installing-r">1.1 Installing R</a></li>
+<li><a href="#1-2-installing-rstudio">1.2 Installing RStudio</a></li>
+<li><a href="#1-3-installing-packages">1.3 Installing packages</a></li>
 </ul></li>
+<li><a href="#2-installing-and-setting-up-git-github-and-github-desktop">2. Installing and setting up Git, GitHub, and GitHub Desktop</a>
+<ul>
+<li><a href="#2-1-installing-and-setting-up-git">2.1 Installing and setting up Git</a></li>
+<li><a href="#2-2-registering-a-github-account">2.2 Registering a GitHub account</a></li>
+<li><a href="#2-3-installing-and-setting-up-github-desktop">2.3 Installing and setting up GitHub Desktop</a></li>
+<li><a href="#bonus-connecting-slack-to-your-repo">Bonus: connecting Slack to your repo</a></li>
+</ul></li>
+<li><a href="#references">References:</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -797,7 +805,7 @@ if (!doNotTrack) {
           
             <h1>
               
-              Material
+              Installation and Setup
             </h1>
           
 
@@ -807,50 +815,195 @@ if (!doNotTrack) {
 
 
 
-<h3 id="laptops">Laptops</h3>
+<h2 id="1-installing-r-and-rstudio">1. Installing R and RStudio</h2>
 
-<p>Bring a laptop to the class every week if you have one. We encourage students to work collaboratively, so we would like to have at least one laptop for every 2 or 3 students. Since the homeworks and the project are the work of a team, we encourage you to team-up with students that possess a laptop. In the case you plan to buy a laptop, remember that the students from Swiss Universities have preferential prices via the <a href="https://www.projektneptun.ch/">Neptun Projekt</a> or the <a href="https://poseidon.epfl.ch/">EPFL&rsquo;s Poseidon</a>.</p>
+<h3 id="1-1-installing-r">1.1 Installing R</h3>
 
-
-<div class="notices note" ><p>You do not need to buy a laptop if you do not possess one.</p>
-</div>
-
-
-<h3 id="textbooks">Textbooks</h3>
-
-<p>This class is based on the online textbook:</p>
+<p>We start with installing the latest version of R (3.6.1 as of September 9). R itself is similar to an engine and chassis of a car, that is a bare minimum so that you can start driving. You need to follow steps below:</p>
 
 <ul>
-<li><strong>Required</strong>: <a href="http://r.smac-group.com">An Introduction to Statistical Programming Methods with R</a></li>
-</ul>
-
-<p>This document is under development and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version. Due to its current development, you may encounter errors ranging from broken code to typos or poorly explained topics. If you do, please let us know! Simply add an issue to the <a href="https://github.com/SMAC-Group/ds/issues">GitHub repository</a> used for this document and we will make the changes as soon as possible. In addition, if you know RMarkdown and are familiar with GitHub, make a pull request and fix an issue yourself, otherwise, if you&rsquo;re not familiar with these tools, they will be explained later on in the book itself.</p>
-
-<p>The textbooks below are also recommended and are legally available online for free. The following texts will be heavily referenced:</p>
+<li>Visit <a href="https://cran.r-project.org">https://cran.r-project.org</a> and click on &ldquo;Download R for &hellip;&rdquo;, where &hellip; coresponds to your operating system.</li>
+<li>Depending on the operating system:
 
 <ul>
-<li><strong>Recommended</strong>: <a href="http://adv-r.had.co.nz/">Advanced R Programming</a> by Hadley Wickham</li>
-<li><strong>Recommended</strong>: <a href="http://r-pkgs.had.co.nz/">R Packages Hadley Wickham</a> by Hadley Wickham</li>
-<li><strong>Recommended</strong>: <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">An Introduction to R</a> by W. N. Venables, D. M. Smith, and the R Core Team</li>
-<li><strong>Recommended</strong>: <a href="https://bookdown.org/yihui/blogdown/">blogdown: Creating Websites with R Markdown</a> by Yihui Xie, Amber Thomas and Alison Presmanes Hill</li>
-<li><strong>Recommended</strong>: <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a> by Yihui Xie, J. J. Allaire, Garrett Grolemund</li>
+<li>For Mac: download &ldquo;R-3.6.1.pkg&rdquo;, open this file, and install R</li>
+<li>For Widnows: click on &ldquo;base&rdquo;, download the .exe file, open it, and install R
+<br /></li>
+</ul></li>
 </ul>
 
-<p>The following textbooks are helpful, but not necessary to succeed in the course:</p>
+<p><em>Check yourself:</em> Open R application. In the console you will see something as follows:</p>
+
+<pre><code class="language-toml">R version 3.6.1 (2019-07-05) -- &quot;Action of the Toes&quot;
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+</code></pre>
+
+<p><em>Note:</em> If you are a Mac user and you see similar to the following warning messages during the startup</p>
+
+<pre><code class="language-toml">During startup - Warning messages:
+1: Setting LC_CTYPE failed, using &quot;C&quot;
+2: Setting LC_COLLATE failed, using &quot;C&quot;
+3: Setting LC_TIME failed, using &quot;C&quot;
+4: Setting LC_MESSAGES failed, using &quot;C&quot;
+5: Setting LC_PAPER failed, using &quot;C&quot;
+[R.app GUI 1.50 (6126) x86_64-apple-darwin9.8.0]
+
+WARNING: You're using a non-UTF8 locale, therefore only ASCII characters will work. Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system preferences accordingly. [History restored from /Users/nemo/.Rapp.history]
+</code></pre>
+
+<p>you need to follow <a href="https://stackoverflow.com/questions/9689104/installing-r-on-mac-warning-messages-setting-lc-ctype-failed-using-c">steps below</a>:</p>
 
 <ul>
-<li><strong>Supplemental</strong>: <a href="https://github.com/hadley/ggplot2-book">ggplot2: Elegant Graphics for Data Analysis (2nd Edition - GitHub Only)</a> by Hadley Wickham</li>
-<li><strong>Supplemental</strong>: <a href="http://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham</li>
-<li><strong>Supplemental</strong>: <a href="https://www.burns-stat.com/pages/Tutor/R_inferno.pdf">The R Inferno</a> by Patrick Burns</li>
-<li><strong>Supplemental</strong>: <a href="https://bookdown.org/rdpeng/rprogdatascience/">R Programming for Data Science</a> by Roger D. Peng</li>
-<li><strong>Supplemental</strong>: <a href="http://www.rcpp.org/book/">Seamless R and C++ integration with Rcpp</a> by Dirk Eddelbuettel</li>
+<li>Open Terminal</li>
+<li>Write or paste in: <code>defaults write org.R-project.R force.LANG en_US.UTF-8</code></li>
+<li>Close Terminal</li>
 </ul>
 
-<p>We regrouped more references by category in the <a href="https://ptds.netlify.com/resources/">resources page</a>.</p>
+<h3 id="1-2-installing-rstudio">1.2 Installing RStudio</h3>
 
-<h3 id="software">Software</h3>
+<p><em>Caution:</em> Install RStudio only once R has been installed and only in this order.</p>
 
-<p>All the software we will be using are free for acamedic activities. The course will use and present the <a href="https://www.r-project.org/">R statistical computing language</a> as well as different parts of C++ through <a href="http://www.rcpp.org/">Rcpp</a>. The integrated developer environment that we will use to explore R is <a href="https://www.rstudio.com/products/rstudio/">RStudio IDE</a> made by <a href="https://www.rstudio.com/">RStudio Inc</a>.</p>
+<p>RStudio is an integrated development environment for R. Following up our exaple of the car, RStudio is similar to additional parts, such as exterior, interior, air conditioner, etc. You can drive the vehicle withour them, but life is much simpler and pleasent if they are present.</p>
+
+<p>We will install the free version:</p>
+
+<ul>
+<li>Visit <a href="https://www.rstudio.com/products/rstudio/download/#download">https://www.rstudio.com/products/rstudio/download/#download</a>.</li>
+<li>Click on the respective version of your operating system, this will start the downloading process.</li>
+<li>Open the file and install.</li>
+</ul>
+
+<p><em>Note:</em> To improve the quality of the code, we will limit the length of lines to 80 symbols. To display the margin in RStudio sourse editor:</p>
+
+<ul>
+<li>Open RStudio</li>
+<li>Go to Tools -&gt; Global Options… -&gt; Code -&gt; Display</li>
+<li>Click on “Show margin”</li>
+<li>Set &ldquo;Margin column&rdquo; to 80</li>
+</ul>
+
+<p><img src="/tutorials/length.png" alt="map" width="400px"/></p>
+
+<p><em>Check yourself:</em> Open RStudio application. In the console you will see something as follows:</p>
+
+<pre><code class="language-toml">R version 3.6.1 (2019-07-05) -- &quot;Action of the Toes&quot;
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+</code></pre>
+
+<h3 id="1-3-installing-packages">1.3 Installing packages</h3>
+
+<p><em>Note:</em> Packages can be installed from both R and RStudio. The installed RStudio is not required.</p>
+
+<p>In this course we will utilize a number of packages. If a package is published on CRAN, then the procedure of installing the package is straightforward:</p>
+
+<ul>
+<li>Open RStudio</li>
+<li>In the console execute the following command: <code>install.packages(&quot;package_name&quot;)</code>, where <code>package_name</code> is the name of the desired package (e.g., &ldquo;ggplot2&rdquo;).</li>
+</ul>
+
+<p>Several packages, however, would have only development version (or simply be not published on CRAN). Then, knowing the GitHub link to the repo, one could follow the steps below:</p>
+
+<ul>
+<li>Install <code>devtools</code> package (if it has not yet been installed) as usual (as shown above).</li>
+<li>Type <code>devtools::install_github(&quot;username/repo&quot;)</code> and hit the Enter/return key to execute the command in the console, where <code>username</code> is the username of the owner of the repo, and <code>repo</code> is the name of the repo.</li>
+</ul>
+
+<p>For homework you will use the following packages from CRAN: <code>&quot;tidyverse&quot;, &quot;rworldmap&quot;, &quot;rworldxtra&quot;, &quot;ggmap&quot;, &quot;devtools&quot;</code>. Additionally, one has to install packages from repos <code>&quot;stat297&quot;</code> and <code>&quot;ptds2018&quot;</code> of SMAC-Group GitHub user (i.e., by using <code>devtools::install_github(&quot;SMAC-Group/stat297&quot;))</code>).</p>
+
+<p><em>Check yourself:</em> <a href="https://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages">To check if a package was installed successfully</a>, use <code>&quot;xtable&quot; %in% rownames(installed.packages())</code>.</p>
+
+<h2 id="2-installing-and-setting-up-git-github-and-github-desktop">2. Installing and setting up Git, GitHub, and GitHub Desktop</h2>
+
+<p>In this section we will install a distributed version-control system Git, register a new user at GitHub and connect them together.</p>
+
+<h3 id="2-1-installing-and-setting-up-git">2.1 Installing and setting up Git</h3>
+
+<ul>
+<li>Download Git installer <a href="http://git-scm.com/download/mac">for Mac</a> or <a href="https://git-scm.com/download/win">for Windows</a>.</li>
+<li>Open the downloaded file and follow the proposed steps</li>
+
+<li><p>Configure your Git to let it know who you are:</p>
+
+<pre><code class="language-toml">git config --global user.name &quot;YOUR FULL NAME&quot;
+git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
+</code></pre>
+
+<p>Please do use your UNIL email address, so that we can exploit GitHub Student Developer Pack afterwards.</p></li>
+</ul>
+
+<p><em>Check yourself:</em> Type in Terminal: <code>git --version</code>. It should display Git version, (e.g., <code>git version 2.22.0</code>)</p>
+
+<p><em>Note:</em> For Mac users, Git could be already preinstalled. However, Apple does not provide the latest version, that is why we have just installed the latest Git. If the previous command shows <code>git version 2.7.0 (Apple Git-66)</code>, we will need to change the path of the executable command <code>git</code>. To do so execute the following commands in Terminal:</p>
+
+<pre><code class="language-toml">cd ~ 
+touch .bash_profile
+echo 'export PATH=&quot;/usr/local/bin:${PATH}&quot;' &gt;&gt; .bash_profile
+source .bash_profile
+</code></pre>
+
+<p><em>Note:</em> Sometimes RStudio has a wrong path to <code>git</code> command. To check it, go to Tools -&gt; Global Options&hellip; -&gt; Git/SVN, check the box &ldquo;Enable version control interface for RStudio projects&rdquo;. Then, &ldquo;Git executable&rdquo; and <code>which git</code>/<code>where git</code> (for Mac/Windows users, respectively) should be the same. Otherwise, copy the path from Terminal to RStudio.</p>
+
+<p>To check if it worked, type <code>which git</code> in Terminal and expect to see <code>/usr/local/bin/git</code>.</p>
+
+<h3 id="2-2-registering-a-github-account">2.2 Registering a GitHub account</h3>
+
+<ul>
+<li>Visit <a href="https://github.com">https://github.com</a> and fill in the fields. Please use the same email (i.e., UNIL email) address and short username without special symbols like hyphen, periods, etc. Furthermore, use free plan.</li>
+
+<li><p>Set up an SSH connection follow steps at <a href="https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a> and <a href="https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account">https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account</a></p></li>
+
+<li><p>Set up a GitHub Student Developer Pack by visiting <a href="https://education.github.com/discount_requests/new">https://education.github.com/discount_requests/new</a></p></li>
+</ul>
+
+<h3 id="2-3-installing-and-setting-up-github-desktop">2.3 Installing and setting up GitHub Desktop</h3>
+
+<ul>
+<li>Visit <a href="https://desktop.github.com">https://desktop.github.com</a> and download GitHub Desktop</li>
+<li>Install it</li>
+<li>Fill in your username and password</li>
+</ul>
+
+<h3 id="bonus-connecting-slack-to-your-repo">Bonus: connecting Slack to your repo</h3>
+
+<p><a href="https://get.slack.help/hc/en-us/articles/232289568-Use-GitHub-with-Slack">https://get.slack.help/hc/en-us/articles/232289568-Use-GitHub-with-Slack</a></p>
+
+<h2 id="references">References:</h2>
+
+<ol>
+<li><a href="https://happygitwithr.com">Happy Git and GitHub for the useR</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials/install-git">Install Git</a></li>
+<li><a href="http://r-pkgs.had.co.nz/git.html">R packages</a></li>
+</ol>
 
 
 <footer class=" footline" >
@@ -889,20 +1042,6 @@ if (!doNotTrack) {
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -913,9 +1052,6 @@ if (!doNotTrack) {
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -970,7 +1106,6 @@ if (!doNotTrack) {
             
                 
                     
-                    
                 
                 
 
@@ -981,41 +1116,6 @@ if (!doNotTrack) {
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
                         
             
@@ -1085,6 +1185,59 @@ if (!doNotTrack) {
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1317,10 +1470,10 @@ if (!doNotTrack) {
 	 
 	 
 		
-			<a class="nav nav-prev" href="/syllabus/communication/" title="Communication"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/tutorials/" title="Tutorials"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/syllabus/final/" title="Convinced?" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/tutorials/style/" title="R Coding Style Guide" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
