@@ -6,7 +6,7 @@
     <description>Recent content in Programming tools in data science on Programming tools for data science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 09 Sep 2019 12:05:21 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2019 16:04:11 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -199,10 +199,10 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
     
     <item>
       <title>Peer grading</title>
-      <link>/project/example/</link>
+      <link>/project/grading/</link>
       <pubDate>Wed, 19 Sep 2018 13:18:34 +0200</pubDate>
       
-      <guid>/project/example/</guid>
+      <guid>/project/grading/</guid>
       <description>In order to grade the other group, please send us your feedback by the 21st of December. Your report should have the following structure:
  Group 1 (x / 27 points):
  Overall quality (x / 3 points)
@@ -220,6 +220,15 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
       
       <guid>/syllabus/final/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>/project/examples/</link>
+      <pubDate>Mon, 09 Sep 2019 16:04:11 +0200</pubDate>
+      
+      <guid>/project/examples/</guid>
+      <description>Lorem Ipsum.</description>
     </item>
     
   </channel>

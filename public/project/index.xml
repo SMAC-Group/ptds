@@ -66,10 +66,10 @@
     
     <item>
       <title>Peer grading</title>
-      <link>/project/example/</link>
+      <link>/project/grading/</link>
       <pubDate>Wed, 19 Sep 2018 13:18:34 +0200</pubDate>
       
-      <guid>/project/example/</guid>
+      <guid>/project/grading/</guid>
       <description>In order to grade the other group, please send us your feedback by the 21st of December. Your report should have the following structure:
  Group 1 (x / 27 points):
  Overall quality (x / 3 points)
@@ -78,6 +78,15 @@
  Screencast (x / 3 points)
  Shiny app (x / 3 points)
  Provided documentation (x / 3 points)</description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>/project/examples/</link>
+      <pubDate>Mon, 09 Sep 2019 16:04:11 +0200</pubDate>
+      
+      <guid>/project/examples/</guid>
+      <description>Lorem Ipsum.</description>
     </item>
     
   </channel>
