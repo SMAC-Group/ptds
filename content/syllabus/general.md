@@ -6,8 +6,8 @@ weight = 5
 
 ### Location and Time
 
-- **Location:** Anthropole (to be determined) 
-- **Time:** Tuesdays 8:30AM - 12AM
+- **Location:** Anthropole/5081 
+- **Time:** Tuesdays 8:30AM - 12PM
 
 ### Course Websites
 
