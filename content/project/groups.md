@@ -4,6 +4,9 @@ date =  2018-09-19T17:41:45+02:00
 weight = 25
 +++
 
+Please use [this link](https://docs.google.com/forms/d/e/1FAIpQLSdQNZjeMYQvU9_WFlAeVZoGV-NtDPH0bVnzqr020s0JzIP9wQ/viewform) to register a group. The entire group should be register at once. On the second week please verify groups' composition at this page.
+
+
 <!--
 * Group 1 (Myama)
     - **Ayrton Rua** (<ayrton.gomesmartinsrua@unil.ch>)
