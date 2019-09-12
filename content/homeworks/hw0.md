@@ -12,25 +12,10 @@ This homework is optional and is not graded.
 
 In this optional tutorial you will get an overview of the basic programming concepts in R and main data types. Just enough to get you up and running essential R code. However, for true "beginners", we highly recommend going through [Advanced R - Chapter 'Foundations'](http://adv-r.had.co.nz/Data-structures.html) from which the content of this assignment is mainly (mostly) inspired by. 
 
-#### R, RStudio, Installation
-* [__R__](https://cran.r-project.org/) is a programming language for statistical analysis.  
-* [__RStudio__](https://www.rstudio.com/products/rstudio/download/) is the integrated development environment (IDE) for R in which we write and execute R code, plot things and write reports.  
-* [Installation guidelines and details (Mac, Windows, Linux)](http://web.cs.ucla.edu/~gulzar/rstudio/)
+#### Installation and setup 
 
-To follow the tutorial, you can start R Studio and execute statements from the code chuncks in the R Console.
+Please visit this [page](https://ptds.netlify.com/tutorials/installation/) for the installation guideline.
 
-
-#### Libraries
-R uses different libraries or packages to load specific functions (read excel files, talk to Twitter, generate plots).
-
-```{toml}
-# install package from RStudio console
-# ** Note the quotation marks!
-# install.packages("name_of_package")
-
-# load package in enviromnet
-library(blogdown) 
-```
 
 #### Assignment
 
