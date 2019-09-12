@@ -114,9 +114,23 @@ Several packages, however, would have only development version (or simply be not
 * Install `devtools` package (if it has not yet been installed) as usual (as shown above).
 * Type `devtools::install_github("username/repo")` and hit the Enter/return key to execute the command in the console, where `username` is the username of the owner of the repo, and `repo` is the name of the repo.
 
-For homework you will use the following packages from CRAN: `"tidyverse", "rworldmap", "rworldxtra", "ggmap", "devtools"`. Additionally, one has to install packages from repos `"stat297"` and `"ptds2018"` of SMAC-Group GitHub user (i.e., by using `devtools::install_github("SMAC-Group/stat297"))`).
+For homework you will use the following packages from CRAN: `"tidyverse"`, `"rworldmap"`, `"rworldxtra"`, `"ggmap"`, `"devtools"`, `"rmarkdown"`, `"knitr"`, `"xml2"`, `"rvest"`, `"magrittr"`, `"shiny"`, `"roxygen2"`, and `"miniUI"`. 
 
-*Check yourself:* [To check if a package was installed successfully](https://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages), use `"xtable" %in% rownames(installed.packages())`.
+Instead of installing these packages one by one, you can pass the vector of characters packages' names: 
+
+
+```{toml}
+pkgs = c("tidyverse", "rworldmap", "rworldxtra", "ggmap", "devtools",
+         "rmarkdown", "knitr", "xml2", "rvest", "magrittr", "shiny", "roxygen2",
+         "miniUI")
+install.packages(pkgs = pkgs)
+```
+
+Additionally, one has to install packages from repos `"stat297"` and `"ptdspkg"` of SMAC-Group GitHub user (i.e., by using `devtools::install_github("SMAC-Group/stat297"))` and `devtools::install_github("SMAC-Group/ptdspkg"))`, respectively).
+
+*Note:* Packages should be installed only **once**. No needs to install them every time when you want to use them (it is the same as installing Skype every time you want to call your parents). That is why it is better to do it in concole, not in source editor.
+
+*Check yourself:* [To check if a package was installed successfully](https://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages), use `"name_of_package" %in% rownames(installed.packages())`.
 
 ## 2. Installing and setting up Git, GitHub, and GitHub Desktop
 
