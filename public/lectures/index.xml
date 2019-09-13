@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>Before the first lecture</title>
+      <title>Before the first lecture: installation and setup</title>
       <link>/lectures/before/</link>
       <pubDate>Wed, 19 Sep 2018 13:10:39 +0200</pubDate>
       
       <guid>/lectures/before/</guid>
-      <description>This class uses R software with RStudio IDE.</description>
+      <description>1. Installing R and RStudio 1.1 Installing R We start with installing the latest version of R (3.6.1 as of September 9). R itself is similar to an engine and chassis of a car, that is a bare minimum so that you can start driving. You need to follow steps below:
+ Visit https://cran.r-project.org and click on &amp;ldquo;Download R for &amp;hellip;&amp;rdquo;, where &amp;hellip; coresponds to your operating system. Depending on the operating system:  For Mac: download &amp;ldquo;R-3.</description>
     </item>
     
     <item>
