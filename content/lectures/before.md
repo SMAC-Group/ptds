@@ -116,6 +116,11 @@ Several packages, however, would have only development version (or simply be not
 
 For homework you will use the following packages from CRAN: `"tidyverse"`, `"rworldmap"`, `"rworldxtra"`, `"ggmap"`, `"devtools"`, `"rmarkdown"`, `"knitr"`, `"xml2"`, `"rvest"`, `"magrittr"`, `"shiny"`, `"roxygen2"`, and `"miniUI"`. 
 
+*Note:* Before installing the `"devtools"` package, you will most certainly need to install building tools.
+For Windows, you need to install [RTools](https://cran.r-project.org/bin/windows/Rtools/).
+For Mac, you need to install [XCode](https://developer.apple.com/xcode/).
+Check this [link](https://r-pkgs.org/setup.html#setup-tools) for more details.
+
 Instead of installing these packages one by one, you can pass the vector of characters packages' names: 
 
 
