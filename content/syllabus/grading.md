@@ -66,5 +66,4 @@ In order to earn full credit for the Piazza portion, each student should make 1 
 
 Due to the structure of this class, attendance is very important. Moreover, students will be encouraged to work in teams on in-class activities each week, so others are counting on you to be in class and contribute. Students with valid excuse should notify the instructor as soon as possible and provide a minimum of one week notice.
 
-Each lecture will have its own magic word that you are responsible for entering into a form link that will be provided on Piazza. In order to be eligible to receive attendance points, you must be in class, enter the magic word within 5 minutes after it is given, and stay for the entire duration of the class. 
--->
+Each lecture will have its own magic word that you are responsible for entering into a form link that will be provided on Piazza. In order to be eligible to receive attendance points, you must be in class, enter the magic word within 5 minutes after it is given, and stay for the entire duration of the class.-->
