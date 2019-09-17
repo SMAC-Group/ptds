@@ -125,13 +125,11 @@ Instead of installing these packages one by one, you can pass the vector of char
 
 
 ```{toml}
-pkgs = c("tidyverse", "rworldmap", "rworldxtra", "ggmap", "devtools",
-         "rmarkdown", "knitr", "xml2", "rvest", "magrittr", "shiny", "roxygen2",
-         "miniUI")
+pkgs = c("tidyverse", "rworldmap", "rworldxtra", "ggmap", "devtools", "rmarkdown", "knitr", "xml2", "rvest", "magrittr", "shiny", "roxygen2","miniUI")
 install.packages(pkgs = pkgs)
 ```
 
-Additionally, one has to install packages from `"ptdspkg"` repo of SMAC-Group GitHub user, and [Hadley Wickham](https://github.com/hadley)'s `"emo"` package (i.e., by using `devtools::install_github("SMAC-Group/ptdspkg"))` and `devtools::install_github("hadley/emo"))`, respectively).
+Additionally, one has to install packages from `"ptdspkg"` repo of SMAC-Group GitHub user, and [Hadley Wickham](https://github.com/hadley)'s `"emo"` package (i.e., by using `devtools::install_github("SMAC-Group/ptdspkg")` and `devtools::install_github("hadley/emo")`, respectively).
 
 *Note:* Packages should be installed only **once**. No needs to install them every time when you want to use them (it is the same as installing Skype every time you want to call your parents). That is why it is better to do it in concole, not in source editor.
 
