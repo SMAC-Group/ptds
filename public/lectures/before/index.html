@@ -13,20 +13,20 @@
     <title>Before the first lecture: installation and setup :: Programming tools for data science</title>
 
     
-    <link href="/css/nucleus.css?1568368677" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1568368677" rel="stylesheet">
-    <link href="/css/hybrid.css?1568368677" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1568368677" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1568368677" rel="stylesheet">
-    <link href="/css/auto-complete.css?1568368677" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1568368677" rel="stylesheet">
-    <link href="/css/theme.css?1568368677" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1568368677" rel="stylesheet">
+    <link href="/css/nucleus.css?1568967278" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1568967278" rel="stylesheet">
+    <link href="/css/hybrid.css?1568967278" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1568967278" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1568967278" rel="stylesheet">
+    <link href="/css/auto-complete.css?1568967278" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1568967278" rel="stylesheet">
+    <link href="/css/theme.css?1568967278" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1568967278" rel="stylesheet">
     
-      <link href="/css/theme-green.css?1568368677" rel="stylesheet">
+      <link href="/css/theme-green.css?1568967278" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1568368677"></script>
+    <script src="/js/jquery-3.3.1.min.js?1568967278"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -98,14 +98,14 @@ if (!doNotTrack) {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1568368677"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1568368677"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1568967278"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1568967278"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1568368677"></script>
+<script type="text/javascript" src="/js/search.js?1568967278"></script>
 
     
   </div>
@@ -940,15 +940,18 @@ Type 'q()' to quit R.
 
 <p>For homework you will use the following packages from CRAN: <code>&quot;tidyverse&quot;</code>, <code>&quot;rworldmap&quot;</code>, <code>&quot;rworldxtra&quot;</code>, <code>&quot;ggmap&quot;</code>, <code>&quot;devtools&quot;</code>, <code>&quot;rmarkdown&quot;</code>, <code>&quot;knitr&quot;</code>, <code>&quot;xml2&quot;</code>, <code>&quot;rvest&quot;</code>, <code>&quot;magrittr&quot;</code>, <code>&quot;shiny&quot;</code>, <code>&quot;roxygen2&quot;</code>, and <code>&quot;miniUI&quot;</code>.</p>
 
+<p><em>Note:</em> Before installing the <code>&quot;devtools&quot;</code> package, you will most certainly need to install building tools.
+For Windows, you need to install <a href="https://cran.r-project.org/bin/windows/Rtools/">RTools</a>.
+For Mac, you need to install <a href="https://developer.apple.com/xcode/">XCode</a>.
+Check this <a href="https://r-pkgs.org/setup.html#setup-tools">link</a> for more details.</p>
+
 <p>Instead of installing these packages one by one, you can pass the vector of characters packages&rsquo; names:</p>
 
-<pre><code class="language-toml">pkgs = c(&quot;tidyverse&quot;, &quot;rworldmap&quot;, &quot;rworldxtra&quot;, &quot;ggmap&quot;, &quot;devtools&quot;,
-         &quot;rmarkdown&quot;, &quot;knitr&quot;, &quot;xml2&quot;, &quot;rvest&quot;, &quot;magrittr&quot;, &quot;shiny&quot;, &quot;roxygen2&quot;,
-         &quot;miniUI&quot;)
+<pre><code class="language-toml">pkgs = c(&quot;tidyverse&quot;, &quot;rworldmap&quot;, &quot;rworldxtra&quot;, &quot;ggmap&quot;, &quot;devtools&quot;, &quot;rmarkdown&quot;, &quot;knitr&quot;, &quot;xml2&quot;, &quot;rvest&quot;, &quot;magrittr&quot;, &quot;shiny&quot;, &quot;roxygen2&quot;,&quot;miniUI&quot;)
 install.packages(pkgs = pkgs)
 </code></pre>
 
-<p>Additionally, one has to install packages from <code>&quot;ptdspkg&quot;</code> repo of SMAC-Group GitHub user, and <a href="https://github.com/hadley">Hadley Wickham</a>&rsquo;s <code>&quot;emo&quot;</code> package (i.e., by using <code>devtools::install_github(&quot;SMAC-Group/ptdspkg&quot;))</code> and <code>devtools::install_github(&quot;hadley/emo&quot;))</code>, respectively).</p>
+<p>Additionally, one has to install packages from <code>&quot;ptdspkg&quot;</code> repo of SMAC-Group GitHub user, and <a href="https://github.com/hadley">Hadley Wickham</a>&rsquo;s <code>&quot;emo&quot;</code> package (i.e., by using <code>devtools::install_github(&quot;SMAC-Group/ptdspkg&quot;)</code> and <code>devtools::install_github(&quot;hadley/emo&quot;)</code>, respectively).</p>
 
 <p><em>Note:</em> Packages should be installed only <strong>once</strong>. No needs to install them every time when you want to use them (it is the same as installing Skype every time you want to call your parents). That is why it is better to do it in concole, not in source editor.</p>
 
@@ -1495,20 +1498,20 @@ source .bash_profile
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1568368677"></script>
-    <script src="/js/perfect-scrollbar.min.js?1568368677"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1568368677"></script>
-    <script src="/js/jquery.sticky.js?1568368677"></script>
-    <script src="/js/featherlight.min.js?1568368677"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1568368677"></script>
-    <script src="/js/highlight.pack.js?1568368677"></script>
+    <script src="/js/clipboard.min.js?1568967278"></script>
+    <script src="/js/perfect-scrollbar.min.js?1568967278"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1568967278"></script>
+    <script src="/js/jquery.sticky.js?1568967278"></script>
+    <script src="/js/featherlight.min.js?1568967278"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1568967278"></script>
+    <script src="/js/highlight.pack.js?1568967278"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1568368677"></script>
-    <script src="/js/learn.js?1568368677"></script>
-    <script src="/js/hugo-learn.js?1568368677"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1568967278"></script>
+    <script src="/js/learn.js?1568967278"></script>
+    <script src="/js/hugo-learn.js?1568967278"></script>
 
-    <link href="/mermaid/mermaid.css?1568368677" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1568368677"></script>
+    <link href="/mermaid/mermaid.css?1568967278" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1568967278"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
