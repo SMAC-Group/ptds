@@ -8,7 +8,7 @@ We use this page to add supplementary material for the lectures.
 
 ### Slides
 
-- [Git and GitHub](https://raw.githubusercontent.com/SMAC-Group/ptds2019/master/data/1-github.pdf)
+- [Git and GitHub](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/1-github.pdf)
 
 <!--
 ### Codes
