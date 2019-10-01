@@ -26,14 +26,16 @@ is.integer(2L)
 Boolean
 ```{r}
 TRUE
-T
+T # not t(), which is a function
 FALSE
 F
+is.logical(TRUE)
 ```
 
 Characters
-```{r}
+```{r, eval=F}
 "a"
+'a'
 a
 is.character("a")
 ```
@@ -48,15 +50,26 @@ is.integer(a)
 ## Vector
 Let's create a vector of characters:
 ```{r}
-players <- c("Novak Djokovic", "Rafael Nadal", "Roger Federer",
-              "Daniil Medvedev", "Dominic Thiem")
+players <- c("Novak Djokovic", "Rafael Nadal", 
+             "Roger Federer","Daniil Medvedev", "Dominic Thiem")
 is.vector(players)
 typeof(players)
+```
+Alternatively (not so important)
+`
+```{r}
+players <- vector("character", length=5)
+players[1] <- "Novak Djokovic"
+players[2] <- "Rafael Nadal"
+players[3] <- "Roger Federer"
+players[4] <- "Daniil Medvedev"
+players[5] <- "Dominic Thiem"
 ```
 
 Vector of integers:
 ```{r}
 ATP_rankings <- c(1L, 2L, 3L, 4L, 5L)
+typeof(ATP_rankings)
 ```
 
 Vector function (not useful)
@@ -93,6 +106,9 @@ players[-c(2,4)]
 
 # subset the first of (subset without 2nd 4th)
 players[-c(2,4)][1]
+
+# Subset with boolean
+players[c(T,T,F,F,F)]
 ```
 
 
@@ -122,7 +138,13 @@ sum(prize_money)
 # average
 mean(prize_money)
 
+# median
+median(prize_money)
+
+mean(prize_money) > median(prize_money)
+
 # order / sort
+order(prize_money)
 order(prize_money, decreasing = T)
 sort(prize_money)
 
@@ -134,6 +156,7 @@ sort(prize_money)
 ### Creation
 Matrix creation:
 ```{r}
+mat <- matrix(ncol=3, nrow=5)
 mat <- matrix(1:15, ncol = 3, nrow = 5)
 mat <- matrix(1:15, ncol = 3, nrow = 5, byrow = T)
 ```
@@ -166,16 +189,16 @@ mat[,-1]
 ### Labelling
 Labelling a matrix:
 ```{r}
-rownames(mat)
-colnames(mat) <- players
+rownames(mat) <- players
+colnames(mat) 
 mat
 
 # delete names
-colnames(mat) <- NULL
-colnames(mat) <- players
+rownames(mat) <- NULL
+rownames(mat) <- players
 
 # subset by names
-mat[,"Rafael Nadal"]
+mat["Rafael Nadal",]
 ```
 
 ### Other
@@ -193,14 +216,14 @@ dim(mat)
 
 Matrix multiplication:
 ```{r}
-mat * mat  # elementwise multuplication
+mat * mat  # elementwise multiplication
 mat %*% t(mat)
 ```
 
 
 Matrix inverse:
 ```{r}
-B <- mat %*% t(mat)
+B <- t(mat) %*% mat
 solve(B)
 
 solve(B) %*% B
@@ -214,11 +237,12 @@ solve(B) %*% B
 Create Array:
 ```{r}
 my_array <- array(NA, dim = c(5,2,2))
+my_array <- array(dim = c(5,2,2)) # NA by default
 my_array[,,1] <- t(mat)
 my_array[,,2] <- cbind(prize_money, ATP_ranking)
 dimnames(my_array)[[1]] <- players
 dimnames(my_array)[[2]] <- c("ATP rankings", "Grand slam wins")
-dimnames(my_array)[[3]] <- c("2018-10-09", "2018-10-10")
+dimnames(my_array)[[3]] <- c("2019-09-30", "2019-10-01")
 ```
 
 
@@ -243,10 +267,10 @@ date_of_birth <- c("22 May 1987", "3 June 1986", "8 August 1981",
 ATP_ranking <- c(1, 2, 3, 4, 5)
 grand_slam_win <- c(16, 19, 20, 0, 0)
 place_of_birth <- c("Serbia", "Spain", "Switzerland", "Russia", "Austria")
-prize_money <- c(135259120, 115178858, 126840700, 8171483, 18588662))
+prize_money <- c(135259120, 115178858, 126840700, 8171483, 18588662)
 win_percentage <- c(82.7, 83.1, 82.2, 63.6, 64.3)
 
-my_list <- list(grand_slam_win, prize_money, players, c(T,F))
+my_list <- list(grand_slam_win, prize_money, players)
 ```
 
 
@@ -260,6 +284,7 @@ typeof(my_list)
 
 ### Subsetting
 ```{r}
+my_list[[1]]
 my_list[[3]][1]
 ```
 
@@ -268,7 +293,8 @@ my_list[[3]][1]
 my_list <- list(slam = grand_slam_win, money = prize_money, players = players, boolean = c(T,F))
 my_list[[1]]
 my_list$money
-
+str(my_list)
+length(my_list)
 ```
 
 ## Data frame
@@ -296,12 +322,22 @@ my_df$players
 Adding a new entry
 ```{r}
 # Adding country
-my_df$country <- country
+my_df$country <- place_of_birth  
 ```
-
 
 ### Labelling
 Same as matrix.
 
 ### Other
-
+From matrix to data frame
+```{r}
+df <- as.data.frame(mat)
+typeof(df)
+```
+From data frame to matrix
+```{r}
+mat2 <- as.matrix(df)
+typeof(mat2)
+mat3 <- as.matrix(my_df)
+typeof(mat3)
+```

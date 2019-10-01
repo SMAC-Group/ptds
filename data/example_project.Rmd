@@ -1,0 +1,130 @@
+---
+title: "Swiss Real Estate Map <br/> PTDS Project"
+author: "Luca Bron, David Germano, Patrik Grandadam, Vincent Lomazzi, Edgar Raisin"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: ioslides_presentation
+runtime: shiny
+---
+
+```{r, include = FALSE}
+library(swissimmo)
+library(png)
+library(grid)
+library(googleway)
+library(dplyr)
+library(kableExtra)
+library(lattice)
+library(ggplot2)
+set_key("AIzaSyAfi4nb5nainDHwjr-eSqJPP0xG7JTpwOY") # the API provided by google 
+```
+
+
+# 1. Our project
+## 1.1 Objectives
+
+* Create an interactive map of the Swiss real estate market
+* Create a R package allowing users to web scrap updated real estate data on Immoscout24
+```{r, fig.width = 7, echo = FALSE}
+img <- readPNG("Images/MapExample.png")
+grid.raster(img)
+```
+
+## 1.2 Methodology
+
+* Data web scraping on Immoscout24
+* Data cleaning
+* Create a data frame with all relevant data
+* Geocoding to get longitudes and latitudes for each observation using googleway package
+* Use of prediction models to determine predicted prices
+
+# 2. Swissimmo package
+
+## Package overview
+
+<b>Allows the user to:</b>  
+
+* Web scrap the data from Immoscout24
+* Predict the prices of the available housings
+* Get the GPS coordinates from the housings
+* Use an interactive map to visualize everything
+
+## <b>get_immodata()</b>
+Web scrap Immoscout24 data by city 
+```{r, error = FALSE, message = FALSE, comment = NA, warning = FALSE, results = 'hide'}
+cities <- get_immodata("crissier") 
+```
+
+```{r, echo = FALSE}
+head(cities, n = 8L) %>% kable %>%
+  kable_styling(font_size = 13)
+```
+
+## <b>predict_price()</b>
+
+```{r}
+# Predictions based on the following attributes for a unique housing
+predict_price(rooms = 3, m2 = 59, city = "nyon", model = "glm")
+```
+
+## <b>summary.pred</b>
+Extract the price of "pred" object
+
+
+```{r, eval = FALSE}
+# Predictions based on the cities dataframe
+cities_pred <- predict_price(cities)
+summary(cities_pred)
+```
+
+```{r, echo = FALSE}
+cities_pred <- predict_price(cities)
+summary(cities_pred) %>% head(n = 5L) %>% kable %>%
+  kable_styling(font_size = 13)
+```
+## <b>plot.pred()</b>
+Plot the predictions against the real values of "pred" object
+```{r}
+plot(cities_pred)
+```
+
+## <b>get_immodata2()</b>
+Web scrap Immoscout24 data by city and adding coordinates and predicted price
+```{r, error = FALSE, message = FALSE, comment = NA, warning = FALSE, results = 'hide'}
+cities <- get_immodata2("crissier") 
+```
+
+```{r, echo = FALSE}
+head(cities, n = 8L) %>% kable %>%
+  kable_styling(font_size = 13)
+```
+
+
+# 3. Shiny App
+## Demonstration
+
+```{r, echo = FALSE}
+all_cities <- readRDS(file = "all_cities.rds") 
+```
+
+8 biggest cities obtained with the presented methods
+
+```{r, eval = FALSE}
+all_cities <- get_immodata2(c("Zurich", "Geneve", "Winterthur", 
+                              "Basel", "Lugano", "Lausanne", 
+                              "Lucerne", "Bern"))
+```
+
+## The map!
+
+```{r}
+swissmap(all_cities) 
+```
+
+## Now, it's your turn!
+
+```{r, eval = FALSE}
+devtools::install_github("vincentlomazzi/swissimmo")
+library(swissimmo)
+```
+
+# Thank You !!!

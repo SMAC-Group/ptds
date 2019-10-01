@@ -16,7 +16,7 @@ The objectives of this homework assignment are the followings:
 - Master different aspects of RMarkdown syntax.  
 - Become familiar with GitHub as a collaborative tool.
 
-To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2018hw1`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
+To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2019hw1`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
 
 - All members of the group must commit at least once.  
 - All commit messages must be reasonably clear and meaningful.  

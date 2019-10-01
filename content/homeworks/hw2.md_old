@@ -5,7 +5,7 @@ weight = 20
 +++
 
 {{% notice warning %}}
-**Deadline: 2018-11-05 at 4pm**  
+**Deadline: 2019-10-21 at 4pm**  
 To submit your work, add `samorso` and `irudnyts` as collaborators to your private GitHub repo.  
 We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless. 
 {{% /notice %}}
@@ -17,7 +17,7 @@ The objectives of this homework assignment are the followings:
 - Constructing a portfolio;  
 - Become familiar with GitHub and using it as a collaborative tool.
 
-To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2018hw2`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
+To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2019hw2`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
 
 - All members of the group must commit at least once.  
 - All commit messages must be reasonably clear and meaningful.  
@@ -25,17 +25,17 @@ To begin with, create a (preferably private) GitHub repository for your group, a
 
 You can create one or several RMarkdown files to answer the following problems:
 
-#### Problem 1: Fizz Buzz
+#### Problem 1: Fuzz Bizz
 Write a program that prints the numbers from 1 to 1000, but with the following specific requirement:
 
-- for multiples of three, print "Fizz" instead of the number; 
-- for the multiples of five print "Buzz" instead of the number; 
-- for numbers which are multiples of both three and five print "FizzBuzz" instead of the number.
+- for multiples of three, print "Fuzz" instead of the number; 
+- for the multiples of five print "Bizz" instead of the number; 
+- for numbers which are multiples of both three and five print "FuzzBizz" instead of the number.
 
 An example of the output would be: 
 
 ```{toml}
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, FizzBuzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
+1, 2, Fuzz, 4, Bizz, Fuzz, 7, 8, Fuzz, Bizz, 11, Fuzz, 13, 14, FuzzBizz, 16, 17, Fuzz, 19, Bizz, Fuzz, 22, 23, Fuzz, Bizz, 26, Fuzz, 28, 29, FuzzBizz, 31, 32, Fuzz, 34, Bizz, Fuzz, ...
 ```
 #### Problem 2: Map
 Using the same tools we used in class, create a simple map to represent the volume of the real estate market in Switzerland. More specifically, the goal of this problem is to reproduce as closely as possible the map below:
@@ -45,14 +45,14 @@ Using the same tools we used in class, create a simple map to represent the volu
 Note that the code below was used to scrap the data needed for this graph:
 
 ```{toml}
-# Please do not forget to update ptds2018
+# Please do not forget to update ptdspkg
 
 library("rworldmap")
 library("rworldxtra")
 library("ggmap")
 library("tidyverse")
 library("magrittr")
-library("ptds2018")
+library("ptdspkg")
 
 cities <- data.frame(
     name = c("zurich", "bern", "lausanne", "geneva", "basel"),
