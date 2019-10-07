@@ -45,8 +45,6 @@ Using the same tools we used in class, create a simple map to represent the volu
 Note that the code below was used to scrap the data needed for this graph:
 
 ```{toml}
-# Please do not forget to update ptdspkg
-
 library("rworldmap")
 library("rworldxtra")
 library("ggmap")
@@ -54,34 +52,18 @@ library("tidyverse")
 library("magrittr")
 library("ptdspkg")
 
-cities <- data.frame(
-    name = c("zurich", "bern", "lausanne", "geneva", "basel"),
-    language = c("german", "german", "french", "french", "german"),
-    stringsAsFactors = FALSE
+cities <- tibble(
+  name = c("zurich", "bern", "lausanne", "geneva", "basel"),
+  language = c("german", "german", "french", "french", "german"),
+  latitude = c(47.369019, 46.948002, 46.519630, 46.204391, 47.559608),
+  longitude = c(8.538030, 7.448130, 6.632130, 6.143158, 7.580610)
 )
 
-# Scrap prices from comparis.ch
+# Scrap prices from comparis.ch using ptdspkg::get_volume()
 #-------------------------------------------------------------------------------
 
-volumes <- sapply(cities$name, get_volume)
-
-cities <- cbind(
-    cities,
-    data.frame(volume = volumes)
-)
-
-# ...or use dplyr
-# cities <- cities %>%
-#     dplyr::mutate(volume = volumes)
-
-# Define cities' coordinates
-#-------------------------------------------------------------------------------
-
-cities <- cbind(
-    cities,
-    geocode(location = cities$name, source = "dsk")
-)
-
+cities <- cities %>%
+  mutate(volume = sapply(name, get_volume))
 
 # Draw the map
 #-------------------------------------------------------------------------------
