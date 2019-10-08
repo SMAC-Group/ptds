@@ -9,6 +9,7 @@ We use this page to add supplementary material for the lectures.
 ### Slides
 
 - [Git and GitHub](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/1-github.pdf)
+- [Control structures](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/3-control-structures.html)
 
 ### Codes
 Find here the code we used during the class.
