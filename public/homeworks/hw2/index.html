@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 
-    <title>R Coding Style Guide :: Programming tools for data science</title>
+    <title>homework #2 :: Programming tools for data science</title>
 
     
     <link href="/css/nucleus.css?1570564886" rel="stylesheet">
@@ -79,7 +79,7 @@ if (!doNotTrack) {
 </script>
 
   </head>
-  <body class="" data-url="/tutorials/style/">
+  <body class="" data-url="/homeworks/hw2/">
     <nav id="sidebar" class="">
 
 
@@ -338,7 +338,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
-        parent
+        
         
         
         ">
@@ -362,7 +362,7 @@ if (!doNotTrack) {
  
   
     
-      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item active">
+      <li data-nav-id="/tutorials/style/" title="R Coding Style Guide" class="dd-item ">
         <a href="/tutorials/style/">
         R Coding Style Guide
         
@@ -408,7 +408,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -489,7 +489,7 @@ if (!doNotTrack) {
  
   
     
-      <li data-nav-id="/homeworks/hw2/" title="homework #2" class="dd-item ">
+      <li data-nav-id="/homeworks/hw2/" title="homework #2" class="dd-item active">
         <a href="/homeworks/hw2/">
         homework #2
         
@@ -744,7 +744,7 @@ if (!doNotTrack) {
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comtutorials/style.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comhomeworks/hw2.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -775,7 +775,7 @@ if (!doNotTrack) {
             
           
           
-            <a href='/'>Programming tools in data science</a> > <a href='/tutorials/'>Tutorials</a> > R Coding Style Guide
+            <a href='/'>Programming tools in data science</a> > <a href='/homeworks/'>Homeworks</a> > homework #2
           
          
           
@@ -794,25 +794,13 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#naming">Naming</a>
+<li>
 <ul>
-<li><a href="#naming-files">Naming files</a></li>
-<li><a href="#naming-variables">Naming variables</a></li>
-<li><a href="#naming-functions">Naming functions</a></li>
-<li><a href="#naming-s4-classes">Naming S4 classes</a></li>
+<li><a href="#problem-1-fuzz-bizz">Problem 1: Fuzz Bizz</a></li>
+<li><a href="#problem-2-map">Problem 2: Map</a></li>
+<li><a href="#problem-3-3d-random-walk">Problem 3: 3D-random walk</a></li>
+<li><a href="#problem-4-portfolio-construction">Problem 4: portfolio construction</a></li>
 </ul></li>
-<li><a href="#syntax">Syntax</a>
-<ul>
-<li><a href="#line-length">Line length</a></li>
-<li><a href="#spacing">Spacing</a></li>
-<li><a href="#curly-braces">Curly braces</a></li>
-<li><a href="#indentation">Indentation</a></li>
-<li><a href="#new-line">New line</a></li>
-</ul></li>
-<li><a href="#comments">Comments</a></li>
-<li><a href="#other-recommendations">Other recommendations</a></li>
-<li><a href="#references">References</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -832,7 +820,7 @@ if (!doNotTrack) {
           
             <h1>
               
-              R Coding Style Guide
+              homework #2
             </h1>
           
 
@@ -842,572 +830,171 @@ if (!doNotTrack) {
 
 
 
-<blockquote>
-<p>Good coding style is like using correct punctuation. You can manage without
-it, but it sure makes things easier to read.
-<cite> Hadley Wickham </cite></p>
-</blockquote>
 
-<h3 id="introduction">Introduction</h3>
+<div class="notices warning" ><p><strong>Deadline: 2019-10-21 at 4pm</strong><br />
+To submit your work, add <code>samorso</code> and <code>irudnyts</code> as collaborators to your private GitHub repo.<br />
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.</p>
+</div>
 
-<p>A language is a tool that allows human beings to interact and communicate with each other. The clearer we express ourselves, the better an idea is transferred from our mind to the other. The same applies to programming languages: concise, clear and consistent codes are easier to read and/or edit. It is especially important, if you have collaborators, who depend on your code. However, even if you don&rsquo;t, keep in mind that at some point in time, you might come back to your code, for example, to fix an error. And if you did not follow consistently your coding style, reviewing your code can take much longer, than you expected. In this context, taking care of your audience means to make your code as readable as possible.</p>
 
-<p>There is no such thing as a &ldquo;correct&rdquo; coding style, as there is no such thing as the best color. At the end of the day, the coding style is a set of developers&rsquo; preferences. If you are coding alone, sticking to your coding style and being consistent is more than enough. The story is a bit different if you are working in a team: it is crucial to agree on a convention beforehand and make sure that everyone follows it.</p>
-
-<p><img src="/tutorials/names.jpg" alt="map" width="400px"/></p>
-
-<p>Even though there is no an official style guide, R is mature and steady enough to have an &ldquo;unofficial&rdquo; convention. In this tutorial, you will learn these &ldquo;unofficial&rdquo; rules, their deviations, and most common styles.</p>
-
-<h3 id="naming">Naming</h3>
-
-<h4 id="naming-files">Naming files</h4>
-
-<p>The convention actually depends on whether you develop a file for a package, or as a part of data analysis process. There are, however, <strong>common rules</strong>:</p>
+<p>The objectives of this homework assignment are the followings:</p>
 
 <ul>
-<li><p>File names should use <code>.R</code> extension.</p>
-
-<pre><code class="language-toml"># Good
-read.R
-
-# Bad 
-read
-</code></pre></li>
-
-<li><p>File names should be meaningful.</p>
-
-<pre><code class="language-toml"># Good 
-model.R
-    
-# Bad
-Untitled1.R
-</code></pre></li>
-
-<li><p>File names should not contain <code>/</code> and spaces. Instead, a dash (<code>-</code>) or underscore (<code>_</code>) should be used.</p>
-
-<pre><code class="language-toml"># Good 
-fir_regression.R
-fir-regression.R
-    
-# Bad
-fit regression.R
-</code></pre></li>
+<li>Learn how program effectively using if/else and iterations statements;</li>
+<li>Become familiar with using data frame objects and mapping packages;<br /></li>
+<li>Constructing a portfolio;<br /></li>
+<li>Become familiar with GitHub and using it as a collaborative tool.</li>
 </ul>
 
-<p>If the file is <strong>a part of the data analysis</strong>, then it makes sense to follow the following recommendations:</p>
+<p>To begin with, create a (preferably private) GitHub repository for your group, and name it <code>ptds2019hw2</code>. Once again, make sure to add <code>samorso</code> and <code>irudnyts</code> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
 
 <ul>
-<li><p>File names should be lowercase. There is nothing bad in having capital case names, just bear in mind UNIX systems are case insensitive, meaning that <code>test.R</code> and <code>Test.R</code> do not differ.</p>
-
-<pre><code class="language-toml"># Good
-analyse.R
-    
-# Bad
-Analyse.R
-</code></pre></li>
-
-<li><p>Use meaningful verbs for file names.</p>
-
-<pre><code class="language-toml"># Good 
-validate-vbm.R
-    
-# Bad
-regression.R
-</code></pre></li>
-
-<li><p>If files should be run in a particular order, then use ascending names.</p>
-
-<pre><code class="language-toml">01-read.R
-02-clean.R
-02-plot.R
-</code></pre></li>
+<li>All members of the group must commit at least once.<br /></li>
+<li>All commit messages must be reasonably clear and meaningful.<br /></li>
+<li>Your GitHub repository must include at least one issue containing some form of TO DO list.</li>
 </ul>
 
-<p>If the file is used <strong>in a pacakge</strong>, than slightly different rules should be taken care of:</p>
+<p>You can create one or several RMarkdown files to answer the following problems:</p>
+
+<h4 id="problem-1-fuzz-bizz">Problem 1: Fuzz Bizz</h4>
+
+<p>Write a program that prints the numbers from 1 to 1000, but with the following specific requirement:</p>
 
 <ul>
-<li><p>Mind special names:</p>
-
-<ul>
-<li><code>AllClasses.R</code> (or <code>AllClass.R</code>), a file that stores all S4 classes definitions.</li>
-<li><code>AllGenerics.R</code> (or <code>AllGeneric.R</code>), a file that stores all S4 generic functions.</li>
-<li><code>zzz.R</code>, a file that contains <code>.onLoad()</code> and friends.</li>
-</ul></li>
-
-<li><p>If the file contains only one function, name it by the function name.</p></li>
-
-<li><p>Use <code>methods-</code> prefix for S4 class methods.</p></li>
+<li>for multiples of three, print &ldquo;Fuzz&rdquo; instead of the number;</li>
+<li>for the multiples of five print &ldquo;Bizz&rdquo; instead of the number;</li>
+<li>for numbers which are multiples of both three and five print &ldquo;FuzzBizz&rdquo; instead of the number.</li>
 </ul>
 
-<h4 id="naming-variables">Naming variables</h4>
+<p>An example of the output would be:</p>
 
-<ul>
-<li><p>Generally, names should be as short as possible, still meaningful nouns.</p>
-
-<pre><code class="language-toml"># Good 
-fit_rt
-split_1
-imdb_page
-    
-# Bad
-fit_regression_tree
-cross_validation_split_one
-foo
-</code></pre></li>
-
-<li><p>Variable names should be typically lowercase.</p>
-
-<pre><code class="language-toml"># Good 
-event
-    
-# Bad 
-Event
-</code></pre></li>
-
-<li><p>NEVER separate words within the name by <code>.</code> (reserved for an S3 dispatch) or use CamelCase (reserved for S4 classes definitions). Instead, use an underscore (<code>_</code>).</p>
-
-<pre><code class="language-toml"># Good 
-event_window
-    
-# Bad 
-event.window
-EventWindow
-</code></pre></li>
-
-<li><p>DO NOT use names of existing function and variables (especially, built-in ones).</p>
-
-<pre><code class="language-toml"># Bad
-T &lt;- 10 # T is a shortcut of TRUE in R
-c &lt;- &quot;constant&quot;
-</code></pre></li>
-</ul>
-
-<h4 id="naming-functions">Naming functions</h4>
-
-<p>Many points of naming variables are similar for naming functions:</p>
-
-<ul>
-<li><p>Generally, function names should be verbs.</p>
-
-<pre><code class="language-toml"># Good
-add()
-    
-# Bad
-addition()
-</code></pre></li>
-
-<li><p>Use <code>.</code> ONLY for dispatching S3 generic.</p>
-
-<pre><code class="language-toml"># Good 
-bw_test()
-    
-# Bad
-bw.test()
-</code></pre></li>
-
-<li><p>Add the underscore (<code>_</code>) prefix to a standard evaluation (SE) equivalent of a function (<code>summrize</code> vs <code>sumarize_</code> ).</p></li>
-</ul>
-
-<h4 id="naming-s4-classes">Naming S4 classes</h4>
-
-<p>Class names should be nouns in CamelCase with initial capital case letter.</p>
-
-<h3 id="syntax">Syntax</h3>
-
-<h4 id="line-length">Line length</h4>
-
-<p>The maximum length of lines is limited to 80 characters (thanks to IBM Punch Card).</p>
-
-<p>It is possible to display the margin in RStudio Source editor:</p>
-
-<ul>
-<li>Go to Tools -&gt; Global Options&hellip; -&gt; Code -&gt; Display</li>
-<li>Click on &ldquo;Show margin&rdquo;</li>
-<li>Set &ldquo;Margin column&rdquo; to 80</li>
-</ul>
-
-<p><img src="/tutorials/length.png" alt="map" width="400px"/></p>
-
-<h4 id="spacing">Spacing</h4>
-
-<ul>
-<li><p>Put spaces around all infix binary operators (<code>=</code>, <code>+</code>, <code>*</code>, <code>==</code>, <code>&amp;&amp;</code>, <code>&lt;-</code>, <code>%*%</code>, etc.).</p>
-
-<pre><code class="language-toml"># Good 
-x == y
-a &lt;- a ^ 2 + 1
-    
-# Bad
-x==y
-a&lt;-a^2+1
-</code></pre></li>
-
-<li><p>Put spaces around &ldquo;=&rdquo; in function calls (except for Bioconductor).</p>
-
-<pre><code class="language-toml"># Good 
-mean(x = c(1, NA, 2), na.rm = TRUE)
-    
-# Bad
-mean(x=c(1, NA, 2), na.rm=TRUE)
-</code></pre></li>
-
-<li><p>Do NOT place space for subsetting (<code>$</code> and <code>@</code>), namespace manipulation (<code>::</code> and <code>:::</code>), and for sequence generation (<code>:</code>).</p>
-
-<pre><code class="language-toml"># Good 
-car$cyl
-dplyr::select
-1:10
-    
-# Bad
-car $cyl
-dplyr:: select
-1: 10
-</code></pre></li>
-
-<li><p>Put a space after a coma:</p>
-
-<pre><code class="language-toml"># Good 
-mtcars[, &quot;cyl&quot;]
-mtcars[1, ]
-mean(x = c(1, NA, 2), na.rm = TRUE)
-    
-# Bad
-mtcars[,&quot;cyl&quot;]
-mtcars[1 ,]
-mean(x = c(1, NA, 2),na.rm = TRUE)
-</code></pre></li>
-
-<li><p>Use a space before left parentheses, except in a function call.</p>
-
-<pre><code class="language-toml"># Good 
-for (element in element_list)
-if (grade == 5.5)
-sum(1:10)
-    
-# Bad
-for(element in element_list)
-if(grade == 5.5)
-sum (1:10)
-</code></pre></li>
-
-<li><p>No spacing around code in parenthesis or square brackets.</p>
-
-<pre><code class="language-toml"># Good 
-if (debug) message(&quot;debug mode&quot;)
-species[&quot;tiger&quot;, ]
-    
-# Bad
-if ( debug ) message(&quot;debug mode&quot;)
-species[ &quot;tiger&quot; ,]
-</code></pre></li>
-</ul>
-
-<h4 id="curly-braces">Curly braces</h4>
-
-<ul>
-<li><p>An opening curly brace should NEVER go on its own line and should always be followed by a new line.</p>
-
-<pre><code class="language-toml"># Good 
-if (is_used) {
-    # do something
-}
-    
-if (is_used) {
-    # do something
-} else {
-    # do something else
-}
-    
-# Bad
-if (is_used)
-{
-    # do something
-}
-    
-if (is_used) { # do something }
-else { # do something else }
-    
-</code></pre></li>
-
-<li><p>A closing curly brace should always go on its own line, unless it’s followed by else.</p>
-
-<pre><code class="language-toml"># Good 
-if (is_used) {
-    # do something
-} else {
-    # do something else
-}
-    
-# Bad
-if (is_used) {
-    # do something
-}
-else {
-    # do something else 
-}
-    
-</code></pre></li>
-
-<li><p>Always indent the code inside curly braces (see next section).</p>
-
-<pre><code class="language-toml"># Good 
-if (is_used) {
-    # do something
-    # and then something else
-}
-    
-# Bad
-if (is_used) {
-# do something
-# and then something else
-}
-</code></pre></li>
-
-<li><p>Curly braces and new lines can avoided, if a statement after <code>if</code> is very short.</p>
-
-<pre><code class="language-toml"># Good 
-if (is_used) return(rval)
-</code></pre></li>
-</ul>
-
-<h4 id="indentation">Indentation</h4>
-
-<p>ALWAYS indent your code!</p>
-
-<ul>
-<li><p>No tabs or mixes of tabs and spaces.</p></li>
-
-<li><p>There are two common number of spaces for indentation: two (Hadley and others) and four (Bioconductor). My own rule of thumb: I use four spaces indentation for data analyses scripts, and two spaces while developing packages.</p></li>
-
-<li><p>Choose the number of spaces of indentation up-front and stick to it. Never mix different number of spaces in one project.</p></li>
-
-<li><p>To set the number of spaces of the project, go to Tools -&gt; Global options&hellip; -&gt; Code -&gt; Editing. Check the following boxes: &ldquo;Insert spaces for tab&rdquo; (with &ldquo;Tab width&rdquo; equal to chosen number), &ldquo;Auto-indent code after paste&rdquo;, and &ldquo;Vertically align arguments in auto-indent&rdquo;.</p></li>
-</ul>
-
-<p><img src="/tutorials/indent.png" alt="map" width="400px"/></p>
-
-<ul>
-<li>Magic shortcut: <code>Command+I</code> (<code>Ctrl+I</code> for Windows/Linux) will indent a selected chunk of code. Together with <code>Command+A</code> (select all) it is a very powerful tool, which saves time.</li>
-</ul>
-
-<p>Try a little exercise: paste the following code in your RStudio source editor, select it, and hit <code>Command+I</code>:</p>
-
-<pre><code class="language-toml">for(i in 1:10) {
-if(i %% 2 == 0)
-print(paste(i, &quot;is even&quot;))
-}
+<pre><code class="language-toml">1, 2, Fuzz, 4, Bizz, Fuzz, 7, 8, Fuzz, Bizz, 11, Fuzz, 13, 14, FuzzBizz, 16, 17, Fuzz, 19, Bizz, Fuzz, 22, 23, Fuzz, Bizz, 26, Fuzz, 28, 29, FuzzBizz, 31, 32, Fuzz, 34, Bizz, Fuzz, ...
 </code></pre>
 
-<h4 id="new-line">New line</h4>
+<h4 id="problem-2-map">Problem 2: Map</h4>
 
-<ul>
-<li><p>Very often a function definition does not fit into one line. In this case, excessive arguments should be moved to a new line, starting from the opening parenthesis.</p>
+<p>Using the same tools we used in class, create a simple map to represent the volume of the real estate market in Switzerland. More specifically, the goal of this problem is to reproduce as closely as possible the map below:</p>
 
-<pre><code class="language-toml">long_function_name &lt;- function(arg1, arg2, arg3, arg4, 
-                               long_argument_name1 = TRUE)
-</code></pre></li>
+<p><img src="/homeworks/map_hw2.png" alt="map" width="400px"/></p>
 
-<li><p>If arguments expand more than into two lines, than each argument should be placed on a separate line.</p>
+<p>Note that the code below was used to scrap the data needed for this graph:</p>
 
-<pre><code class="language-toml">long_function_name &lt;- function(long_argument_name1 = c(&quot;value1&quot;, &quot;value2&quot;),
-                               long_argument_name2 = TRUE,
-                               long_argument_name3 = NULL,
-                               long_argument_name4 = FALSE)
-</code></pre></li>
+<pre><code class="language-toml">library(&quot;rworldmap&quot;)
+library(&quot;rworldxtra&quot;)
+library(&quot;ggmap&quot;)
+library(&quot;tidyverse&quot;)
+library(&quot;magrittr&quot;)
+library(&quot;ptdspkg&quot;)
 
-<li><p>The same applies to a function call: excessive arguments should be indented where the closing parenthesis is located, if only two lines are sufficient.</p>
-
-<pre><code class="language-toml">plot(table(rpois(100, 5)), type = &quot;h&quot;, col = &quot;red&quot;, lwd = 10, 
-     main = &quot;rpois(100, lambda = 5)&quot;)
-</code></pre></li>
-
-<li><p>Otherwise, each argument can go into a separate line, starting from a new line after the opening parenthesis.</p>
-
-<pre><code class="language-toml">list(
-    mean = mean(x),
-    sd = sd(x),
-    var = var(x),
-    min = min(x),
-    max = max(x),
-    median = median(x)
+cities &lt;- tibble(
+  name = c(&quot;zurich&quot;, &quot;bern&quot;, &quot;lausanne&quot;, &quot;geneva&quot;, &quot;basel&quot;),
+  language = c(&quot;german&quot;, &quot;german&quot;, &quot;french&quot;, &quot;french&quot;, &quot;german&quot;),
+  latitude = c(47.369019, 46.948002, 46.519630, 46.204391, 47.559608),
+  longitude = c(8.538030, 7.448130, 6.632130, 6.143158, 7.580610)
 )
-</code></pre></li>
 
-<li><p>If the condition in <code>if</code> statement expands into several lines, than each condition should end with a logical operator, NOT start with it.</p>
+# Scrap prices from comparis.ch using ptdspkg::get_volume()
+#-------------------------------------------------------------------------------
 
-<pre><code class="language-toml"># Good
-if (some_very_long_name_1 == 1 &amp;&amp;
-    some_very_long_name_2 == 1 ||
-    some_very_long_name_3 %in% some_very_long_name_4)
-        
-# Bad
-if (some_very_long_name_1 == 1
-    &amp;&amp; some_very_long_name_2 == 1
-    || some_very_long_name_3 %in% some_very_long_name_4)
+cities &lt;- cities %&gt;%
+  mutate(volume = sapply(name, get_volume))
+
+# Draw the map
+#-------------------------------------------------------------------------------
+
+world_map &lt;- getMap(resolution = &quot;high&quot;)
+
+which(sapply(1:243, function(x) world_map@polygons[[x]]@ID) == &quot;Switzerland&quot;)
+
+switzerland &lt;- world_map@polygons[[40]]@Polygons[[1]]@coords %&gt;% as_tibble()
+
+# your code goes here
 </code></pre>
 
-<p>I know some people who are completely against it. See the next bullet why I believe it is better.</p></li>
+<h4 id="problem-3-3d-random-walk">Problem 3: 3D-random walk</h4>
 
-<li><p>If the statement, which contains operators, expands into several lines, than each line should end with an operator, not start with it. Sometimes, it makes sense to split a formula into meaningful chunks.</p>
+<p>In this problem you will program a three-dimensional random walk. For this purpose we will consider a three-dimensional space where we let $\mathbf{X}_0 = [0 \;\; 0\;\; 0]^T$ denote the starting point of our process. Suppose that there exists a sequence of (univariate) random variables $U_1, \cdots, U_B$ such $U_t \stackrel{iid}{\sim} \mathcal{U}(0,1)$. Then, we let the position at time $t$ (where $1 \leq t \leq B$) be given by $$\mathbf{X}_t = \mathbf{X}_s + \mathbf{f}(U_t),$$ where $s=t-1$. The function $\mathbf{f}$ gives the new direction. For simplicity, we assume that at each time $t$ the process moves one-step forward or backward in (only) one of the three dimensions. Let us introduces five &ldquo;threeshold values&rdquo; $0\leq a_1&lt;a_2&lt;a_3&lt;a_4&lt;a_5\leq1$. So to be concrete, the function $\mathbf{f}$ returns the following vectors:</p>
 
-<pre><code class="language-toml"># Good 
-normal_pdf &lt;- 1 / sqrt(2 * pi * d_sigma ^ 2) *
-    exp(-(x - d_mean) ^ 2 / 2 / s ^ 2)
-    
-# Bad
-normal_pdf &lt;- 1 / sqrt(2 * pi * d_sigma ^ 2)
-    * exp(-(x - d_mean) ^ 2 / 2 / d_sigma ^ 2)
+<ul>
+<li>$[+1\;\;0\;\;0]^T$ if $U_t\leq a_1$,<br /></li>
+<li>$[-1\;\;0\;\;0]^T$ if $U_t\in(a_1,a_2]$,<br /></li>
+<li>$[0\;\;+1\;\;0]^T$ if $U_t\in(a_2,a_3]$,<br /></li>
+<li>$[0\;\;-1\;\;0]^T$ if $U_t\in(a_3,a_4]$,<br /></li>
+<li>$[0\;\;0\;\;+1]^T$ if $U_t\in(a_4,a_5]$,<br /></li>
+<li>$[0\;\;0\;\;-1]^T$ if $U_t&gt;a_5$.<br /></li>
+</ul>
+
+<p>For example, let $B = 2$, $a_i = \frac{i}{6}$, $U_1 = 0.12$ and $U_2 = 0.81$ then we have, at the first step, $$ \mathbf{X}_1 = \mathbf{X}_0 + \mathbf{f}(U_1) = [0\;\;0\;\;0]^T + [1\;\;0\;\;0]^T = [1\;\;0\;\;0]^T, $$ and at the second step, $$ \mathbf{X}_2 = \mathbf{X}_1 + \mathbf{f}(U_2) = [1\;\;0\;\;0]^T + [0\;\;0\;\;1]^T = [1\;\;0\;\;1]^T. $$</p>
+
+<ul>
+<li><p><strong>(a)</strong> Using the same idea, simulate a three-dimensional random walk with $B = 10^4$, $a_i = \frac{i}{6}$ and with $U_t$ being obtained as follows:</p>
+
+<pre><code class="language-toml">B &lt;- 10^4
+set.seed(1982)
+Ut &lt;- runif(B)
+</code></pre></li>
+</ul>
+
+<p>Notice that $U_t$ corresponds to the <em>t</em>-th element of <code>Ut</code>. With this configuration, show that a the last step you obtain $$ \mathbf{X}_B = [26\;\;-44\;\;26]^T, $$ and provide a graphical respresentation of your random walk. For example, you can produce a graph similar to the one below which is based on the function <code>segments3D</code> from the <code>plot3D</code> package. Note that the red and blue points indicate, respectively the starting and end points of the random walk.</p>
+
+<p><img src="/homeworks/rw3d_hw2.png" alt="map" width="600px"/></p>
+
+<ul>
+<li><p><strong>(b)</strong> Repeat part <strong>(a)</strong> by modifying the parameters: $B = 10^5$, $a_i = 0.99 \frac{i}{6}$ and with $U_t$ being obtained as follows</p>
+
+<pre><code class="language-toml">B &lt;- 10^5
+set.seed(2000)
+Ut &lt;- runif(B)
+</code></pre></li>
+</ul>
+
+<p>Verify that you obtain $$ \mathbf{X}_B = [142\;\;-133\;\;-899]^T $$ and produce a graph similar to:</p>
+
+<p><img src="/homeworks/rw3d2_hw2.png" alt="map" width="600px"/></p>
+
+<ul>
+<li><strong>bonus</strong> Use the package <code>animation</code> to create a video that shows how a random walk evolves over time.</li>
+</ul>
+
+<h4 id="problem-4-portfolio-construction">Problem 4: portfolio construction</h4>
+
+<p>Suppose that you are working in an investment firm company as a quantitative analyst. Your boss gives you the task of creating a portfolio for one of your clients. The client wants to find the portfolio with the smallest variance that satisfies the following constraints:</p>
+
+<ul>
+<li>Invest exactly $1,000,000.<br /></li>
+<li>Invest in exactly two stocks of the S&amp;P500 index.<br /></li>
+</ul>
+
+<p>Therefore, your boss requires that you compute all possible portfolios that satify the client&rsquo;s constraints, represent them graphically as (for example) in the graph below and find the weight of the best (i.e. minimum variance) portfolio.</p>
+
+<p><img src="/homeworks/port_hw2.png" alt="map" width="600px"/></p>
+
+<p>In order to complete this task, the boss tells you to use <strong>3 years</strong> of historical data. The boss also mentions that the function <code>get()</code> could be useful for this project and provides you with the example below (what a really nice boss!):</p>
+
+<pre><code class="language-toml">library(quantmod)
+library(rvest)
+sp500 &lt;- read_html(&quot;https://en.wikipedia.org/wiki/List_of_S%26P_500_companies&quot;)
+
+sp500 %&gt;% 
+  html_nodes(&quot;.text&quot;) %&gt;% 
+  html_text() -&gt; ticker_sp500
+
+SP500_symbol &lt;- ticker_sp500[(1:499)*2+1]
+
+# Replace &quot;.&quot; by &quot;-&quot;
+SP500_symbol &lt;- gsub(&quot;.&quot;,&quot;-&quot;,SP500_symbol,fixed=T)
+
+# Specify timing
+tot_length &lt;- 3 * 365
+today &lt;- Sys.Date()
+seq_three_years &lt;- seq(today,by=-1,length.out=tot_length)
+three_year_ago &lt;- seq_three_years[tot_length]
+
+# Retrieve data for a stock
+i &lt;- 1
+getSymbols(SP500_symbol[i],from=three_year_ago,to=today)
+stock_price &lt;- ClCl(get(SP500_symbol[i]))
 </code></pre>
-
-<p>Not only it is ugly, but also syntactically wrong. In the second case, R will consider these two lines as two distinct statements: the first line will assign the value of <code>1 / sqrt(2 * pi * d_sigma ^ 2)</code> to <code>normal_pdf</code>, and the second line will throw an error, since <code>*</code> does not have the first argument.</p></li>
-
-<li><p>Each grammar statement of <code>dplyr</code> (after <code>%&gt;%</code>) and <code>ggplot2</code> (after <code>+</code>) should start from a new line.</p>
-
-<pre><code class="language-toml">mtcars %&gt;%
-    filter(cyl == 4) %&gt;% 
-    group_by(am) %&gt;% 
-    summarize(avg_mpg = mean(mpg))
-        
-ggplot(mtcars) + 
-    geom_point(aes(x = mpg, y = qsec, color = factor(am))) + 
-    geom_line(aes(x = mpg, y = qsec, color = factor(am)))
-</code></pre></li>
-</ul>
-
-<h3 id="comments">Comments</h3>
-
-<ul>
-<li><p>Comment your code. Always. Your collaborators and future-you will be very grateful. Comments starts by <code>#</code> followed by space and actual comment.</p>
-
-<pre><code class="language-toml"># This is a comment. 
-</code></pre></li>
-
-<li><p>Comments should explain the why, not the what. Comments should not replicate the code by a plain langue, but rather explain the overall intention of the command.</p>
-
-<pre><code class="language-toml"># Good
-# define iterator
-i &lt;- 1
-    
-# Bad
-# set i to 1
-i &lt;- 1
-</code></pre></li>
-
-<li><p>Short comments can be placed after code preceded by one space, <code>#</code>, and then one space.</p>
-
-<pre><code class="language-toml">plot(price, weight) # plot a scatter chart of price and weight
-</code></pre></li>
-
-<li><p>To comment/uncomment selected chunk, use <code>Command+Shift+C</code>.</p></li>
-
-<li><p>Use <code>roxygen2</code> comments for a package development (i.e., <code>#'</code>) to comment functions.</p></li>
-
-<li><p>It makes sense to split the source into logical chunks by <code>#</code> followed by <code>-</code> or <code>=</code>.</p>
-
-<pre><code class="language-toml"># Read data
-#---------------------------------------------------------------------------
-    
-# Tidy data
-#---------------------------------------------------------------------------
-    
-</code></pre></li>
-</ul>
-
-<h3 id="other-recommendations">Other recommendations</h3>
-
-<ul>
-<li><p>Use <code>&lt;-</code> for assignment, NOT <code>=</code>.</p></li>
-
-<li><p>Use <code>library()</code> instead of <code>require()</code>, unless it is a conscious choice. Package names should be characters (avoid NSE - non-standard evaluation).</p>
-
-<pre><code class="language-toml"># Good
-library(&quot;dplyr&quot;)
-    
-# Bad
-require(dplyr)
-</code></pre></li>
-
-<li><p>In a function call, arguments can be specified by position, by complete name, or by partial name. Never specify by partial name and never mix by position and by complete name.</p>
-
-<pre><code class="language-toml"># Good 
-mean(x, na.rm = TRUE)
-rnorm(10, 0.2, 0.3)
-    
-# Bad
-mean(x, na = TRUE)
-rnorm(mean = 0.2, 10, 0.3)
-</code></pre></li>
-
-<li><p>While developing a package, specify arguments by name.</p></li>
-
-<li><p>The required (with no default value) arguments should be first, followed by optional arguments.</p>
-
-<pre><code class="language-toml"># Good
-raise_to_power(x, power = 2.7)
-    
-# Bad
-raise_to_power(power = 2.7, x)
-</code></pre></li>
-
-<li><p>The <code>...</code> argument should either be in the beginning, or in the end.</p>
-
-<pre><code class="language-toml"># Good
-standardize(..., scale = TRUE, center = TRUE)
-save_chart(chart, file, width, height, ...)
-    
-# Bad
-standardize(scale = TRUE, ..., center = TRUE)
-save_chart(chart, ..., file, width, height)
-</code></pre></li>
-
-<li><p>Good practice is to set default arguments inside the function using <code>NULL</code> idiom, and avoid dependence between arguments:</p>
-
-<pre><code class="language-toml"># Good
-histogram &lt;- function(x, bins = NULL) {
-    if (is.null(bins)) bins &lt;- nclass.Sturges(x)
-    ...
-}
-    
-# Bad
-histogram &lt;- function(x, bins = nclass.Sturges(x)) {
-    ...
-}
-</code></pre></li>
-
-<li><p>Always validate arguments in a function.</p></li>
-
-<li><p>While developing a package, specify the namespace of each used function, except if it is from <code>base</code> package.</p></li>
-
-<li><p>Do NOT put more than one statement (command) per line. Do NOT use semicolon as termination of the command.</p>
-
-<pre><code># Good
-x &lt;- 1
-x &lt;- x + 1
-    
-# Bad 
-x &lt;- 1; x &lt;- x + 1
-</code></pre></li>
-
-<li><p>Avoid using <code>setwd(&quot;/Users/irudnyts/path/that/only/I/have&quot;)</code>. Almost surely your collaborators will have different paths, which makes the project not portable. Instead, use <code>here::here()</code> function from <code>here()</code> package (for details see next tutorial).</p></li>
-
-<li><p>Avoid using <code>rm(list = ls())</code>. This statement delets all objects from the global enviroment, and gives you an illusion of a fresh R start (for details see next tutorial).</p></li>
-</ul>
-
-<p>If you have read until this moment, you deserve a prize. There is a magic key combination <code>Command+Shift+A</code> that reformats selected code: add spaces and indent it. Do not use it exessively though!</p>
-
-<h3 id="references">References</h3>
-
-<ul>
-<li><a href="http://adv-r.had.co.nz/Style.html">Advanced R</a></li>
-<li><a href="https://google.github.io/styleguide/Rguide.xml">Google&rsquo;s R Style Guide</a></li>
-<li><a href="http://bioconductor.org/developers/how-to/coding-style/">Bioconductor Coding Style</a></li>
-<li><a href="https://csgillespie.github.io/efficientR/coding-style.html">Efficient R programming</a></li>
-<li><a href="https://csgillespie.wordpress.com/2010/11/23/r-style-guide/">Colin Gillespie’s R style guide</a></li>
-<li><a href="https://journal.r-project.org/archive/2012-2/RJournal_2012-2_Baaaath.pdf">The State of Naming Conventions in R</a></li>
-<li><a href="https://www.r-bloggers.com/consistent-naming-conventions-in-r/">Consistent naming conventions in R</a></li>
-<li><a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">Project-oriented workflow</a></li>
-<li>Picture is taken from <a href="https://www.facebook.com/Rmemes0/">R Memes For Statistical Fiends</a> Facebook page.</li>
-</ul>
 
 
 <footer class=" footline" >
@@ -1609,59 +1196,6 @@ x &lt;- 1; x &lt;- x + 1
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -1690,6 +1224,42 @@ x &lt;- 1; x &lt;- x + 1
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1734,6 +1304,23 @@ x &lt;- 1; x &lt;- x + 1
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1741,6 +1328,9 @@ x &lt;- 1; x &lt;- x + 1
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1890,10 +1480,10 @@ x &lt;- 1; x &lt;- x + 1
 	 
 	 
 		
-			<a class="nav nav-prev" href="/tutorials/" title="Tutorials"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/homeworks/hw1/" title="homework #1"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/tutorials/workflow/" title="Project-oriented workflow" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/project/" title="Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
