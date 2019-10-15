@@ -6,12 +6,13 @@ title = "Programming tools in data science"
 
 {{% notice warning %}}
 Website under construction.
-New updates coming soon (last update 2019-09-30)
+New updates coming soon (last update 2019-10-15)
 {{% /notice %}}
 
-{{% notice warning %}}
+<!--{{% notice warning %}}
 **Before the second lecture (2019-09-24)** please do not forget to register your group by following steps of [this page](https://ptds.netlify.com/project/groups/).
 {{% /notice %}}
+-->
 
 The objective of the website is to provide a support for *Programming tools in data science* given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall 2019. This course is intended to provide an introduction to programming using the R language. It will also provide students with notions of data management, manipulation and analysis as well as of reproducible research, result-sharing and version control (using GitHub). At the end of the class, student should be able to construct their own R package, make it available on GitHub, document it using literate programming and render it visible by making a website.
 

@@ -28,7 +28,7 @@ Please use [this link](https://docs.google.com/forms/d/e/1FAIpQLSdQNZjeMYQvU9_WF
 * Group 4 (The rocket scientists)
     - Guillaume Lakah (<guillaume.lakah@unil.ch>)
     - Mathieu Schnyder (<mathieu.schnyder@unil.ch>)
-    - Monica Navarro (<monica.navarro@unil.ch>)
+    - Monica Navarro (<monica.navarrocalvo@unil.ch>)
     - Ines Guardans Gonzalez (<ines.guardansgonzalez@unil.ch>)
 * Group 5
     - Saphir Kwan (<saphir.kwan@unil.ch>)
