@@ -196,6 +196,20 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
     </item>
     
     <item>
+      <title>homework #3</title>
+      <link>/homeworks/hw3/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:57 +0200</pubDate>
+      
+      <guid>/homeworks/hw3/</guid>
+      <description>Deadline: 2019-11-04 at 4pm
+To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
+ The objectives of this homework assignment are the followings:
+ Become competent at programming effectively using if/else and iterations statements; Learn how to program effectively using functions and think like a programmer;
+ Improve your collaborative skills via GitHub.</description>
+    </item>
+    
+    <item>
       <title>Material</title>
       <link>/syllabus/material/</link>
       <pubDate>Wed, 15 Aug 2018 19:08:54 +0200</pubDate>
