@@ -5,7 +5,7 @@ weight = 30
 +++
 
 {{% notice warning %}}
-**Deadline: 2018-12-03 at 4pm**  
+**Deadline: 2019-11-18 at 4pm**  
 To submit your work, add `samorso` and `irudnyts` as collaborators to your private GitHub repo.  
 We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
 {{% /notice %}}
@@ -90,11 +90,11 @@ In this problem we simplify the `find_pi` function in order to have two separate
 
 In this problem, we simply wrap these function into a shape of a package.
 
-- Create a package `ptds2018hw4gN` (where `N` is your group number) in RStudio: File -> New Project... -> New Directory -> R Package. Do not forget to check the box "Create a git repository".
+- Create a package `ptds2019hw4gN` (where `N` is your group number) in RStudio: File -> New Project... -> New Directory -> R Package. Do not forget to check the box "Create a git repository".
 
 - Record your changes and commit by `git add --all` and `git commit -m "Initialize the structure of the package."`. You can use build-in RStudio toolbar instead of `Shell` commands.
 
-- Everything what we have done so far are local changes on your computer. Now we need to create a new GitHub repo `ptds2018hw4gN` (where `N` is your group number) and synchronize it with your local git repo by:
+- Everything what we have done so far are local changes on your computer. Now we need to create a new GitHub repo `ptds2019hw4gN` (where `N` is your group number) and synchronize it with your local git repo by:
 
   ```{toml}
   git remote add origin git@github.com:YOURUSERNAME/ptds2018hw4gN.git
@@ -119,6 +119,7 @@ Note if you use `ggplot2`, you have to specify it in `DESCRIPTION` file in the s
 
 You can also check yourself at this step, if everything works well. You need to `Install and Restart` (in `Build` tab) and try to run `estimate_pi()`, as well as look at the help file by `?estimate_pi`.
 
+<!--
 #### Problem 2: introduce a high performance computing
 
 This problem shows how to integrate the high performance computing into a package. We utilize `Rcpp` package for this purpose, which makes it straightforward.
@@ -157,13 +158,12 @@ This problem shows how to integrate the high performance computing into a packag
 - Define a new R function `estimate_pi2()` in `pi.R` that would use `is_inside()` function instead of the native R `for` loop. Commit.
 
 - Document `estimate_pi2()` function in a similar manner as in Problem 1. Commit.
+-->
+#### Problem 2: Shiny App
 
-#### Problem 3: Shiny App
-
-Now we compliment the package with a Shiny app, so that a user can have an interactive interface to play around with the functionality of the package. The core functions of the package, `estimate_pi` vs `estimate_pi2`, have two inputs: the argument `seed` and the argument `B` (the number of simulations). We  want to allow the user to choose the values of both, as well as select the function that will produce simulations. The result of the app should be the estimated value of $\pi$, the time spent on simulations, and finally, the plot of points in/out of the circle. Therefore, the interface should have:
+Now we compliment the package with a Shiny app, so that a user can have an interactive interface to play around with the functionality of the package. The core function of the package, `estimate_pi`, has two inputs: the argument `seed` and the argument `B` (the number of simulations). We  want to allow the user to choose the values of both, as well as select the function that will produce simulations. The result of the app should be the estimated value of $\pi$, the time spent on simulations, and finally, the plot of points in/out of the circle. Therefore, the interface should have:
 
 - A side bar of the following elements:
-  - A select box with two elements, namely, `estimate_pi` and `estimate_pi2`
   - A numeric input of the seed
   - A slider for a number of simulations that goes from `1` to `1000000`
 
@@ -180,7 +180,7 @@ Below a step-by-step instruction is presented:
   ...
   Imports:
       Rcpp,
-      shiny (>= 1.2.0)
+      shiny (>= 1.4.0)
   ...
   ```
 - Create a folder `inst\shiny-examples` in a package directory (i.e., `inst` folder at top level, and `shiny-examples` inside `inst`).
@@ -231,7 +231,7 @@ Below a step-by-step instruction is presented:
 
   ```{toml}
   library(shiny)
-  library(ptds2018hw4gN) # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
+  library(ptds2019hw4gN) # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
 
   shinyServer(function(input, output) {
 
