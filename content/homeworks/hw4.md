@@ -13,7 +13,6 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
 The objectives of this homework assignment are the followings:
 
 - Build your own R packages
-- Incorporate the high performance computing into a pacakge using `Rcpp` package
 - Create and develop an interactive Shiny web-application
 
 To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2018hw4`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:

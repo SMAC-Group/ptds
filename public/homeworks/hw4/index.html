@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.unil.ch/favicon.ico" type="image/x-icon" />
 
-    <title>Categories :: Programming tools for data science</title>
+    <title>homework #4 :: Programming tools for data science</title>
 
     
     <link href="/css/nucleus.css?1572857317" rel="stylesheet">
@@ -79,7 +79,7 @@ if (!doNotTrack) {
 </script>
 
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/homeworks/hw4/">
     <nav id="sidebar" class="">
 
 
@@ -408,7 +408,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/homeworks/" title="Homeworks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -527,7 +527,7 @@ if (!doNotTrack) {
  
   
     
-      <li data-nav-id="/homeworks/hw4/" title="homework #4" class="dd-item ">
+      <li data-nav-id="/homeworks/hw4/" title="homework #4" class="dd-item active">
         <a href="/homeworks/hw4/">
         homework #4
         
@@ -778,6 +778,17 @@ if (!doNotTrack) {
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://ptds.netlify.comhomeworks/hw4.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -798,7 +809,13 @@ if (!doNotTrack) {
             
           
           
-            <a href='/'>Programming tools in data science</a> > Categories
+            
+            
+          
+          
+            <a href='/'>Programming tools in data science</a> > <a href='/homeworks/'>Homeworks</a> > homework #4
+          
+         
           
          
           
@@ -809,7 +826,22 @@ if (!doNotTrack) {
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#problem-0-modify-find-pi-from-homework-3">Problem 0: modify <code>find_pi</code> from Homework #3</a></li>
+<li><a href="#problem-1-build-an-r-package">Problem 1: build an R package</a></li>
+<li><a href="#problem-2-shiny-app">Problem 2: Shiny App</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -825,7 +857,7 @@ if (!doNotTrack) {
           
             <h1>
               
-              Categories
+              homework #4
             </h1>
           
 
@@ -836,14 +868,318 @@ if (!doNotTrack) {
 
 
 
+<div class="notices warning" ><p><strong>Deadline: 2019-11-18 at 4pm</strong><br />
+To submit your work, add <code>samorso</code> and <code>irudnyts</code> as collaborators to your private GitHub repo.<br />
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.</p>
+</div>
+
+
+<p>The objectives of this homework assignment are the followings:</p>
+
 <ul>
-	
+<li>Build your own R packages</li>
+<li>Create and develop an interactive Shiny web-application</li>
 </ul>
+
+<p>To begin with, create a (preferably private) GitHub repository for your group, and name it <code>ptds2018hw4</code>. Once again, make sure to add <code>samorso</code> and <code>irudnyts</code> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
+
+<ul>
+<li>All members of the group must commit at least once.<br /></li>
+<li>All commit messages must be reasonably clear and meaningful.<br /></li>
+<li>Your GitHub repository must include at least one issue containing some form of TO DO list.</li>
+</ul>
+
+<h4 id="problem-0-modify-find-pi-from-homework-3">Problem 0: modify <code>find_pi</code> from Homework #3</h4>
+
+<p>In this problem we simplify the <code>find_pi</code> function in order to have two separated functions for simulation and vizualization (plotting) of simulated results. A nicely designed function should do one coherent action at a time. Further, the name of a function should be self-explanatrory, that is a user should be able to guess what function does by its name.</p>
+
+<ul>
+<li><p><strong>(a)</strong> The function <code>find_pi</code> should do exactly one action, that is estimate $\pi$. Therefore, we need to introduce the following modifications:</p>
+
+<ul>
+<li>Rename <code>find_pi</code> to <code>estimate_pi</code></li>
+<li>Remove <code>make_plot</code> argument and the code chunk to plot the chart</li>
+</ul>
+
+<p>The function <code>estimate_pi</code> should return both the estimated value of $\pi$ and simulated points. The simulated points will be used for plotting afterwards, therefore, it makes sense to store them in a data frame with three columns: <code>x</code>, <code>y</code>, and a logical column <code>inside</code> (<code>TRUE</code> if a point inside a circle, and <code>FALSE</code> otherwise).</p>
+
+<p>As long as we need to return two objects, we keep them as elements of a list. Also, using S3 methodology, we assign a class <code>pi</code> to this list (to dispatch a <code>plot</code> method).</p></li>
+</ul>
+
+<p>Incorporating these modifications, the function will look as follows:</p>
+
+<pre><code class="language-toml">  estimate_pi &lt;- function(B = 5000, seed = 10) {
+
+      # set a seed
+      set.seed(seed)
+
+      # simulate B points
+      points &lt;- data.frame(
+          x = runif(n = B, min = -1, max = 1),
+          y = runif(n = B, min = -1, max = 1),
+          inside = rep(NA, B)
+      )
+
+      # your loop goes here
+      # ...
+
+      # create a new list
+      rval &lt;- list(
+          estimated_pi = estimated_pi,
+          points = points
+      )
+
+      # assign pi class to rval
+      class(rval) &lt;- &quot;pi&quot;
+
+      # return rval
+      return(rval)
+
+  }
+</code></pre>
+
+<ul>
+<li><p><strong>(b)</strong> Now, we can initialize the function to visualize our simulation. The function should take a returned value of <code>estimate_pi</code> as the argument, and produce a plot based on <code>points</code> element of such object:</p>
+
+<pre><code class="language-toml">plot.pi &lt;- function(x) {
+
+  points &lt;- x[[&quot;points&quot;]]
+
+  # plot points
+
+}
+</code></pre></li>
+</ul>
+
+<p>Note that this function returns nothing, but plots a chart. To call this function you can simply use <code>plot(x)</code>, where <code>x</code> is a result of the function <code>estimate_pi</code>.</p>
+
+<ul>
+<li><strong>bonus</strong></li>
+</ul>
+
+<p>Validate arguments in each function, for instance, make sure that <code>B</code> and <code>seed</code> are positive and integer numbers, etc.</p>
+
+<h4 id="problem-1-build-an-r-package">Problem 1: build an R package</h4>
+
+<p>In this problem, we simply wrap these function into a shape of a package.</p>
+
+<ul>
+<li><p>Create a package <code>ptds2019hw4gN</code> (where <code>N</code> is your group number) in RStudio: File -&gt; New Project&hellip; -&gt; New Directory -&gt; R Package. Do not forget to check the box &ldquo;Create a git repository&rdquo;.</p></li>
+
+<li><p>Record your changes and commit by <code>git add --all</code> and <code>git commit -m &quot;Initialize the structure of the package.&quot;</code>. You can use build-in RStudio toolbar instead of <code>Shell</code> commands.</p></li>
+
+<li><p>Everything what we have done so far are local changes on your computer. Now we need to create a new GitHub repo <code>ptds2019hw4gN</code> (where <code>N</code> is your group number) and synchronize it with your local git repo by:</p>
+
+<pre><code class="language-toml">git remote add origin git@github.com:YOURUSERNAME/ptds2018hw4gN.git
+git push -u origin master
+</code></pre></li>
+</ul>
+
+<p>where <code>YOURUSERNAME</code> is your GitHub username and <code>N</code> is the group number.</p>
+
+<ul>
+<li><p>Copy the function <code>estimate_pi()</code> and <code>plot.pi()</code> from the previous problem into file <code>pi.R</code> in <code>\R</code> folder. Commit.</p></li>
+
+<li><p>Document the function <code>estimate_pi</code> and <code>plot.pi</code> using <code>roxygen2</code> comments. Use <code>devtools::document()</code> to generate help files afterwards. Do not forget to specify <code>@export</code> in <code>roxygen2</code> comments to export functions into NAMESPACE (make it visible outside the package). Commit.</p></li>
+
+<li><p>Fill in the DESCRIPTION file. Commit.</p></li>
+
+<li><p>Clean up the auto-generated file <code>hello.R</code> and <code>hello.Rd</code>, from <code>\R</code> and <code>\man</code>, respectively. Commit.</p></li>
+
+<li><p>Remove <code>NAMESPACE</code> file, since it was not auto-generated by <code>roxygen2</code> (and, therefore, prevents <code>roxygen2</code> to overwrite <code>NAMESPACE</code>). Then, evoke the command <code>devtools::document()</code> to generate it. Commit.</p></li>
+</ul>
+
+<p>At the end of each step, please, do not forget to commit with a clear message.</p>
+
+<p>Note if you use <code>ggplot2</code>, you have to specify it in <code>DESCRIPTION</code> file in the section <code>Imports</code>. To use the function from <code>ggplot2</code>, you have to specify its namespace, that is use <code>ggplot2::ggplot()</code> instead of <code>ggplot()</code>.</p>
+
+<p>You can also check yourself at this step, if everything works well. You need to <code>Install and Restart</code> (in <code>Build</code> tab) and try to run <code>estimate_pi()</code>, as well as look at the help file by <code>?estimate_pi</code>.</p>
+
+<!--
+#### Problem 2: introduce a high performance computing
+
+This problem shows how to integrate the high performance computing into a package. We utilize `Rcpp` package for this purpose, which makes it straightforward.
+
+- In console run `devtools::use_rcpp()`. This command will add `Rcpp` to `LinkingTo` and `Imports` (in `DESCRIPTION`), create `src\` folder (where `.cpp` files live), and add compiled files into `.gitignore`.
+
+- Create file with the same name of the package (i.e., `ptds2018hw4gN.R`) and include the following lines in it:
+
+  ```{toml}
+  #' @useDynLib ptds2018hw4gN
+  #' @importFrom Rcpp sourceCpp
+  NULL
+  ```
+
+- Run `devtools::document()` and commit.
+
+- Create a new file `is_inside.cpp` in `\src` (File -> New File -> C++ File). The file should contain a function `is_inside()` that supplies `NumericMatrix` of two columns, and returns a `LogicalVector`, for which `true` means that the point inside the circle, and `false`, respectively, outside. This function should perform a `for` loop to define whether or not points inside the circle. The file would look then as follows:
+
+  ```{toml}
+  #include <Rcpp.h>
+  using namespace Rcpp;
+
+  // [[Rcpp::export]]
+  LogicalVector is_inside(NumericMatrix points) {
+
+      LogicalVector inside(points.nrow());
+
+      // for loop in which `inside` is defined
+
+      return inside;
+  }
+  ```
+
+- Document by `devtools::document()` and commit.
+
+- Define a new R function `estimate_pi2()` in `pi.R` that would use `is_inside()` function instead of the native R `for` loop. Commit.
+
+- Document `estimate_pi2()` function in a similar manner as in Problem 1. Commit.
+-->
+
+<h4 id="problem-2-shiny-app">Problem 2: Shiny App</h4>
+
+<p>Now we compliment the package with a Shiny app, so that a user can have an interactive interface to play around with the functionality of the package. The core function of the package, <code>estimate_pi</code>, has two inputs: the argument <code>seed</code> and the argument <code>B</code> (the number of simulations). We  want to allow the user to choose the values of both, as well as select the function that will produce simulations. The result of the app should be the estimated value of $\pi$, the time spent on simulations, and finally, the plot of points in/out of the circle. Therefore, the interface should have:</p>
+
+<ul>
+<li><p>A side bar of the following elements:</p>
+
+<ul>
+<li>A numeric input of the seed</li>
+<li>A slider for a number of simulations that goes from <code>1</code> to <code>1000000</code></li>
+</ul></li>
+
+<li><p>A main panel of the following elements:</p>
+
+<ul>
+<li>A plot</li>
+<li>A text with the value of estimated $pi$</li>
+<li>A text with the time of the execution (use function <code>system.time</code> to measure)</li>
+</ul></li>
+</ul>
+
+<p>Below a step-by-step instruction is presented:</p>
+
+<ul>
+<li><p>Add <code>shiny</code> package in <code>DESCRIPTION</code> file into the section <code>Imports</code>:</p>
+
+<pre><code class="language-toml">...
+Imports:
+  Rcpp,
+  shiny (&gt;= 1.4.0)
+...
+</code></pre></li>
+
+<li><p>Create a folder <code>inst\shiny-examples</code> in a package directory (i.e., <code>inst</code> folder at top level, and <code>shiny-examples</code> inside <code>inst</code>).</p></li>
+
+<li><p>Click File -&gt; New File -&gt; Shiny Web App. Call the app as <code>pi</code>, select &ldquo;Application type:&rdquo; being &ldquo;Multiple File (ui.R/server.R)&rdquo;, and then navigate &ldquo;Create within directory:&rdquo; to newly created <code>shiny-examples</code>. Commit.</p></li>
+
+<li><p>Modify <code>ui.R</code> according to the mentioned above specification. The file would look like:</p>
+
+<pre><code class="language-toml">library(shiny)
+
+shinyUI(fluidPage(
+
+  titlePanel(&quot;Pi Estimation&quot;),
+
+  sidebarLayout(
+
+      sidebarPanel(
+
+          selectInput(&quot;method&quot;, ...),
+
+          numericInput(&quot;seed&quot;, ...),
+
+          sliderInput(&quot;B&quot;, ...)
+
+      ),
+
+      mainPanel(
+
+        plotOutput(&quot;plot&quot;),
+
+        textOutput(&quot;time&quot;),
+
+        textOutput(&quot;pi&quot;)
+      )
+  )
+))
+</code></pre></li>
+</ul>
+
+<p>where <code>&quot;method&quot;</code>, <code>&quot;seed&quot;</code>, <code>&quot;B&quot;</code> are <code>inputID</code>&rsquo;s; and <code>&quot;plot&quot;</code>, <code>&quot;time&quot;</code>, and <code>&quot;pi&quot;</code> are <code>outputId</code>&rsquo;s. Insert your code instead of <code>...</code>.</p>
+
+<p>Hint: see help <code>?selectInput</code>, <code>?numericInput</code>, and <code>?sliderInput</code> to figure out what should replace <code>...</code>.</p>
+
+<ul>
+<li>Modify <code>server.R</code>. Here we need to define a reactive expression (<code>simulate</code> in the chunk below), which will be executed whenever widgets are changed. This reactive depends on the values from <code>input</code> list with <code>inputID</code> elements (i.e., <code>&quot;method&quot;</code>).</li>
+</ul>
+
+<p>The <code>output</code> defines what will be rendered, therefore, the <code>server.R</code> file is as follows:</p>
+
+<pre><code class="language-toml">  library(shiny)
+  library(ptds2019hw4gN) # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
+
+  shinyServer(function(input, output) {
+
+      simulate &lt;- reactive({
+          # simulate pi and measure the time here
+          ...
+      })
+
+      output$plot &lt;- renderPlot({
+          # plot pi
+          ...
+      })
+
+      output$time &lt;- renderText({
+          # extract the time of the execution
+          ...
+      })
+
+      output$pi &lt;- renderText({
+          # extract the estimated value
+          ...
+      })
+
+  })
+</code></pre>
+
+<p>Do not forget to change N to the number of your group.</p>
+
+<p>Commit your changes.</p>
+
+<ul>
+<li><p>Add a file <code>runDemo.R</code> containing the following snippet:</p>
+
+<pre><code class="language-toml">#' @export
+runDemo &lt;- function() {
+  # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
+  appDir &lt;- system.file(&quot;shiny-examples&quot;, &quot;pi&quot;, package = &quot;ptds2018hw4gN&quot;)
+  if (appDir == &quot;&quot;) {
+      stop(
+          # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
+          &quot;Could not find example directory. Try re-installing ptds2018hw4gN.&quot;,
+          call. = FALSE
+      )
+  }
+
+  shiny::runApp(appDir, display.mode = &quot;normal&quot;)
+
+}
+</code></pre></li>
+</ul>
+
+<p>Do not forget to change N to the number of your group.</p>
+
+<p>Add documentation to this function using <code>roxygen2</code> comments (as in Problem 1) and <code>devtools::document()</code>. Commit.</p>
+
+<p>Phew! What a relief!</p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -1087,6 +1423,7 @@ if (!doNotTrack) {
             
                 
                     
+                    
                 
                 
 
@@ -1099,6 +1436,9 @@ if (!doNotTrack) {
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1180,6 +1520,7 @@ if (!doNotTrack) {
             
                 
                     
+                    
                 
                 
 
@@ -1198,6 +1539,9 @@ if (!doNotTrack) {
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1347,8 +1691,10 @@ if (!doNotTrack) {
 	 
 	 
 		
+			<a class="nav nav-prev" href="/homeworks/hw3/" title="homework #3"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/syllabus/" title="Syllabus" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/project/" title="Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1379,3 +1725,4 @@ if (!doNotTrack) {
 
   </body>
 </html>
+
