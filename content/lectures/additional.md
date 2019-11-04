@@ -6,7 +6,7 @@ weight = 10
 
 We use this page to add supplementary material for the lectures.
 
-### Slides/Codes
+### Slides/Scripts
 
 - [Git and GitHub](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/1-github.pdf)
 - [Control structures](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/3-control-structures.html)
