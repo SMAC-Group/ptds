@@ -16,6 +16,8 @@ Find here the code we used during the class.
 
 {{% button href="https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/class_ds.Rmd" icon="fa fa-fw fa-download" %}}Get R file from Lecture #3 on Data Structure{{% /button %}}
 
+{{% button href="https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/class_sa.Rmd" icon="fa fa-fw fa-download" %}}Get R file from Lecture #8 on Shiny App{{% /button %}}
+
 <!--
 {{% button href="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/class2.Rmd" icon="fa fa-fw fa-download" %}}Get RMarkdown file from Lecture #2{{% /button %}}
 {{% button href="https://raw.githubusercontent.com/SMAC-Group/ptds2018_website/master/data/bibliography.bib" icon="fa fa-fw fa-download" %}}...and the bibliography{{% /button %}}
