@@ -74,5 +74,18 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
  Improve your collaborative skills via GitHub.</description>
     </item>
     
+    <item>
+      <title>homework #4</title>
+      <link>/homeworks/hw4/</link>
+      <pubDate>Fri, 17 Aug 2018 16:40:59 +0200</pubDate>
+      
+      <guid>/homeworks/hw4/</guid>
+      <description>Deadline: 2019-11-18 at 4pm
+To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
+We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
+ The objectives of this homework assignment are the followings:
+ Build your own R packages Create and develop an interactive Shiny web-application  To begin with, create a (preferably private) GitHub repository for your group, and name it ptds2018hw4.</description>
+    </item>
+    
   </channel>
 </rss>
