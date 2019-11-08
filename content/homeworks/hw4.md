@@ -15,7 +15,7 @@ The objectives of this homework assignment are the followings:
 - Build your own R packages
 - Create and develop an interactive Shiny web-application
 
-To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2018hw4`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
+To begin with, create a (preferably private) GitHub repository for your group, and name it `ptds2019hw4`. Once again, make sure to add `samorso` and `irudnyts` as collaborators. This project **must** be done using GitHub and respect the following requirements:
 
 - All members of the group must commit at least once.  
 - All commit messages must be reasonably clear and meaningful.  
@@ -96,7 +96,7 @@ In this problem, we simply wrap these function into a shape of a package.
 - Everything what we have done so far are local changes on your computer. Now we need to create a new GitHub repo `ptds2019hw4gN` (where `N` is your group number) and synchronize it with your local git repo by:
 
   ```{toml}
-  git remote add origin git@github.com:YOURUSERNAME/ptds2018hw4gN.git
+  git remote add origin git@github.com:YOURUSERNAME/ptds2019hw4gN.git
   git push -u origin master
   ```
 
@@ -125,10 +125,10 @@ This problem shows how to integrate the high performance computing into a packag
 
 - In console run `devtools::use_rcpp()`. This command will add `Rcpp` to `LinkingTo` and `Imports` (in `DESCRIPTION`), create `src\` folder (where `.cpp` files live), and add compiled files into `.gitignore`.
 
-- Create file with the same name of the package (i.e., `ptds2018hw4gN.R`) and include the following lines in it:
+- Create file with the same name of the package (i.e., `ptds2019hw4gN.R`) and include the following lines in it:
 
   ```{toml}
-  #' @useDynLib ptds2018hw4gN
+  #' @useDynLib ptds2019hw4gN
   #' @importFrom Rcpp sourceCpp
   NULL
   ```
@@ -267,11 +267,11 @@ Below a step-by-step instruction is presented:
   #' @export
   runDemo <- function() {
       # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
-      appDir <- system.file("shiny-examples", "pi", package = "ptds2018hw4gN")
+      appDir <- system.file("shiny-examples", "pi", package = "ptds2019hw4gN")
       if (appDir == "") {
           stop(
               # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
-              "Could not find example directory. Try re-installing ptds2018hw4gN.",
+              "Could not find example directory. Try re-installing ptds2019hw4gN.",
               call. = FALSE
           )
       }

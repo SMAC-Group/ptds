@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.59.1" />
     <meta name="description" content="This website provides the support for the class Programming tools in data science given at the Faculty of Business and Economics (HEC Lausanne) of the University of Lausanne in Fall (currently 2019)">
 <meta name="author" content="Samuel Orso">
 
@@ -13,20 +13,20 @@
     <title>homework #4 :: Programming tools for data science</title>
 
     
-    <link href="/css/nucleus.css?1572860352" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1572860352" rel="stylesheet">
-    <link href="/css/hybrid.css?1572860352" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1572860352" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1572860352" rel="stylesheet">
-    <link href="/css/auto-complete.css?1572860352" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1572860352" rel="stylesheet">
-    <link href="/css/theme.css?1572860352" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1572860352" rel="stylesheet">
+    <link href="/css/nucleus.css?1573227593" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1573227593" rel="stylesheet">
+    <link href="/css/hybrid.css?1573227593" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1573227593" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1573227593" rel="stylesheet">
+    <link href="/css/auto-complete.css?1573227593" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1573227593" rel="stylesheet">
+    <link href="/css/theme.css?1573227593" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1573227593" rel="stylesheet">
     
-      <link href="/css/theme-green.css?1572860352" rel="stylesheet">
+      <link href="/css/theme-green.css?1573227593" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1572860352"></script>
+    <script src="/js/jquery-3.3.1.min.js?1573227593"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -98,14 +98,14 @@ if (!doNotTrack) {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1572860352"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1572860352"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1573227593"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1573227593"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1572860352"></script>
+<script type="text/javascript" src="/js/search.js?1573227593"></script>
 
     
   </div>
@@ -881,7 +881,7 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
 <li>Create and develop an interactive Shiny web-application</li>
 </ul>
 
-<p>To begin with, create a (preferably private) GitHub repository for your group, and name it <code>ptds2018hw4</code>. Once again, make sure to add <code>samorso</code> and <code>irudnyts</code> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
+<p>To begin with, create a (preferably private) GitHub repository for your group, and name it <code>ptds2019hw4</code>. Once again, make sure to add <code>samorso</code> and <code>irudnyts</code> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
 
 <ul>
 <li>All members of the group must commit at least once.<br /></li>
@@ -970,7 +970,7 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
 
 <li><p>Everything what we have done so far are local changes on your computer. Now we need to create a new GitHub repo <code>ptds2019hw4gN</code> (where <code>N</code> is your group number) and synchronize it with your local git repo by:</p>
 
-<pre><code class="language-toml">git remote add origin git@github.com:YOURUSERNAME/ptds2018hw4gN.git
+<pre><code class="language-toml">git remote add origin git@github.com:YOURUSERNAME/ptds2019hw4gN.git
 git push -u origin master
 </code></pre></li>
 </ul>
@@ -1002,10 +1002,10 @@ This problem shows how to integrate the high performance computing into a packag
 
 - In console run `devtools::use_rcpp()`. This command will add `Rcpp` to `LinkingTo` and `Imports` (in `DESCRIPTION`), create `src\` folder (where `.cpp` files live), and add compiled files into `.gitignore`.
 
-- Create file with the same name of the package (i.e., `ptds2018hw4gN.R`) and include the following lines in it:
+- Create file with the same name of the package (i.e., `ptds2019hw4gN.R`) and include the following lines in it:
 
   ```{toml}
-  #' @useDynLib ptds2018hw4gN
+  #' @useDynLib ptds2019hw4gN
   #' @importFrom Rcpp sourceCpp
   NULL
   ```
@@ -1154,11 +1154,11 @@ shinyUI(fluidPage(
 <pre><code class="language-toml">#' @export
 runDemo &lt;- function() {
   # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
-  appDir &lt;- system.file(&quot;shiny-examples&quot;, &quot;pi&quot;, package = &quot;ptds2018hw4gN&quot;)
+  appDir &lt;- system.file(&quot;shiny-examples&quot;, &quot;pi&quot;, package = &quot;ptds2019hw4gN&quot;)
   if (appDir == &quot;&quot;) {
       stop(
           # REPLACE N BY YOUR GROUP NUMBER AND DELETE THIS COMMENT
-          &quot;Could not find example directory. Try re-installing ptds2018hw4gN.&quot;,
+          &quot;Could not find example directory. Try re-installing ptds2019hw4gN.&quot;,
           call. = FALSE
       )
   }
@@ -1704,20 +1704,20 @@ runDemo &lt;- function() {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1572860352"></script>
-    <script src="/js/perfect-scrollbar.min.js?1572860352"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1572860352"></script>
-    <script src="/js/jquery.sticky.js?1572860352"></script>
-    <script src="/js/featherlight.min.js?1572860352"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1572860352"></script>
-    <script src="/js/highlight.pack.js?1572860352"></script>
+    <script src="/js/clipboard.min.js?1573227593"></script>
+    <script src="/js/perfect-scrollbar.min.js?1573227593"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1573227593"></script>
+    <script src="/js/jquery.sticky.js?1573227593"></script>
+    <script src="/js/featherlight.min.js?1573227593"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1573227593"></script>
+    <script src="/js/highlight.pack.js?1573227593"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1572860352"></script>
-    <script src="/js/learn.js?1572860352"></script>
-    <script src="/js/hugo-learn.js?1572860352"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1573227593"></script>
+    <script src="/js/learn.js?1573227593"></script>
+    <script src="/js/hugo-learn.js?1573227593"></script>
 
-    <link href="/mermaid/mermaid.css?1572860352" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1572860352"></script>
+    <link href="/mermaid/mermaid.css?1573227593" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1573227593"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
