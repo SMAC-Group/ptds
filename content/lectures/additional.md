@@ -12,6 +12,7 @@ We use this page to add supplementary material for the lectures.
 - [Control structures](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/3-control-structures.html)
 - [Functions](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/4-functions.html), [create_data_partition.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/create_data_partition.R)
 - [Web scraping (Part I)](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/5-scraping.html), [wine.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine.R), [wine_dynamic_try.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine_dynamic_try.R), [cities.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/cities.R), [selenium_clean.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/selenium_clean.R)
+- See an example of R package [here](https://github.com/SMAC-Group/test0)
 
 ### Codes
 Find here the code we used during the class.
