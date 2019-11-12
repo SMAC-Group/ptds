@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homeworks on Programming tools for data science</title>
@@ -84,7 +84,7 @@ We will grade only the latest files prior to the deadline. Any ulterior modifica
 To submit your work, add samorso and irudnyts as collaborators to your private GitHub repo.
 We will grade only the latest files prior to the deadline. Any ulterior modifications are pointless.
  The objectives of this homework assignment are the followings:
- Build your own R packages Create and develop an interactive Shiny web-application  To begin with, create a (preferably private) GitHub repository for your group, and name it ptds2018hw4.</description>
+ Build your own R packages Create and develop an interactive Shiny web-application  To begin with, create a (preferably private) GitHub repository for your group, and name it ptds2019hw4.</description>
     </item>
     
   </channel>
