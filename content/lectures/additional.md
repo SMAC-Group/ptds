@@ -13,6 +13,8 @@ We use this page to add supplementary material for the lectures.
 - [Functions](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/4-functions.html), [create_data_partition.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/create_data_partition.R)
 - [Web scraping (Part I)](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/5-scraping.html), [wine.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine.R), [wine_dynamic_try.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine_dynamic_try.R), [cities.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/cities.R), [selenium_clean.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/selenium_clean.R)
 - [Web scraping (Part II) and regular expressions](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/6-regex.html), [wine_problems.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine_problems.R), [wine_selenium.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/wine_selenium.R), [pathe_exercise.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/pathe_exercise.R), [regex_exercise.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/regex_exercise.R), [regex_examples.R](https://raw.githubusercontent.com/SMAC-Group/ptds/master/data/regex_examples.R)
+- See an example of R package [here](https://github.com/SMAC-Group/test0)
+
 ### Codes
 Find here the code we used during the class.
 
