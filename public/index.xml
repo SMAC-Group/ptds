@@ -65,7 +65,7 @@
       
       <guid>/lectures/additional/</guid>
       <description> We use this page to add supplementary material for the lectures.
-Slides/Scripts  Git and GitHub Control structures Functions, create_data_partition.R Web scraping (Part I), wine.R, wine_dynamic_try.R, cities.R, selenium_clean.R Web scraping (Part II) and regular expressions, wine_problems.R, wine_selenium.R, pathe_exercise.R, regex_exercise.R, regex_examples.R See an example of R package here  Codes Find here the code we used during the class.
+Slides/Scripts  Git and GitHub Control structures Functions, create_data_partition.R Web scraping (Part I), wine.R, wine_dynamic_try.R, cities.R, selenium_clean.R Web scraping (Part II) and regular expressions, wine_problems.R, wine_selenium.R, pathe_exercise.R/pathe_solution.R, regex_exercise.R/regex_solution.R, regex_examples.R See an example of R package here  Codes Find here the code we used during the class.
  Get R file from Lecture #3 on Data Structure   Get R file from Lecture #8 on Shiny App   Get PDF file from Coline Zeballos about entrepreneurship   Get R code for Shiny App of the St-Petersburg games paradox example  </description>
     </item>
     
