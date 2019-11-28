@@ -134,7 +134,7 @@ library(rvest)
 sp500 <- read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
 
 sp500 %>% 
-  html_nodes(".text") %>% 
+  html_nodes(".text") %>% # "td:nth-child(1) .text" should be used instead
   html_text() -> ticker_sp500
 
 SP500_symbol <- ticker_sp500[(1:499)*2+1]
