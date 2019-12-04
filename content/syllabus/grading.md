@@ -53,7 +53,7 @@ Do not underestimate the workload that the project represents. This class requir
 {{% /notice %}}
 
 ### Homeworks
-There are four homework assignments during the semester which are realized in groups. Each of these homeworks combines some of the content learned throughout the course. There are five points per homework. Homeworks and their specific requirements are detailed at the [homeworks page](https://ptds.netlify.com/homeworks/).
+There are four homework assignments during the semester which are realized in groups. Each of these homeworks combines some of the content learned throughout the course. There are 7.5 points per homework. Homeworks and their specific requirements are detailed at the [homeworks page](https://ptds.netlify.com/homeworks/).
 
 {{% notice warning %}}
 Late submission is penalized by 1 point every 24 hours after the deadline.
