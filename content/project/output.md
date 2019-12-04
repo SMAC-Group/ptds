@@ -21,3 +21,15 @@ The output of your project must be:
   + A well formatted package skeleton (man, inst, docs, R, etc.)
   + A shiny app to allow someone having absolutely no R knowledge to “use” what you have done in your project.  
   + This package should work. This means that the instructors should be able to call all necessary (intended) functions with yourpackage::yourfunction. 
+
+Presentation schedule:
+
+| Time | Group number |
+|---|---|
+|9:30-9:45| 1 |
+|9:45-10:00| 2 |
+|10:00-10:15| 3 |
+|10:15-10:30| 4 |
+|10:30-10:45| 5 |
+|10:45-11:00| 6 |
+

@@ -6,7 +6,7 @@ title = "Programming tools in data science"
 
 {{% notice warning %}}
 Website under construction.
-New updates coming soon (last update 2019-10-15)
+New updates coming soon (last update 2019-12-04)
 {{% /notice %}}
 
 <!--{{% notice warning %}}
